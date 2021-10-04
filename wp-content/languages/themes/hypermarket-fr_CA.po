@@ -1,0 +1,1640 @@
+# Translation of Themes - Hypermarket in French (Canada)
+# This file is distributed under the same license as the Themes - Hypermarket package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-11-13 20:41:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr_CA\n"
+"Project-Id-Version: Themes - Hypermarket\n"
+
+#. Description of the theme
+msgid "Hypermarket WordPress theme is all about design. It offers a beautiful and impressive look for your site, which is one of the ways through which you can retain traffic. In case you want to start an e-commerce project, the Hypermarket theme is one of the first things you need. The whole design of theme is ultra-responsive and Retina ready, offering you a site that can be accessed from any device, no matter the size or technology of its screen. Try Hypermarket now!"
+msgstr "Le thème WordPress de l'Hypermarket est tout au sujet du design. Il offre un look magnifique et impressionnant pour votre site, qui est l'un des moyens par lesquels vous pouvez conserver le trafic. Si vous souhaitez démarrer un projet de commerce électronique, le thème Hypermarché est l'une des premières choses dont vous avez besoin. L'ensemble de la conception du thème est ultra-réactif et prêt pour Retina, vous offrant un site accessible depuis n'importe quel appareil, quelle que soit la taille ou la technologie de son écran. Essayez Hypermarket maintenant!"
+
+#. Theme Name of the theme
+#: includes/classes/class-hypermarket-welcome-screen.php:60
+msgid "Hypermarket"
+msgstr "Hypermarket"
+
+#: woocommerce/myaccount/form-login.php:96
+msgid "A password will be sent to your email address."
+msgstr "Le nouveau mot de passe a été envoyé à votre adresse courriel."
+
+#: woocommerce/loop/orderby.php:28
+msgid "Shop order"
+msgstr "Commande"
+
+#: woocommerce/myaccount/form-edit-account.php:41
+msgid "Display name*"
+msgstr "Afficher un nom*"
+
+#: woocommerce/myaccount/form-edit-account.php:40
+msgid "Display name"
+msgstr "Afficher un nom"
+
+#: comments.php:106
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr "Enregistrer mon nom, adresse courriel et site web dans le navigateur pour la prochaine fois que je commenterai."
+
+#: woocommerce/myaccount/form-lost-password.php:39
+msgid "Reset password"
+msgstr "Réinitialiser le mot de passe"
+
+#: woocommerce/myaccount/form-edit-address.php:41
+msgid "Save address"
+msgstr "Enregistrer l'adresse"
+
+#. translators: 1: first result 2: last result
+#: woocommerce/loop/result-count.php:39
+msgctxt "with first and last result"
+msgid "Showing the single item"
+msgid_plural "Showing %1$d&ndash;%2$d items"
+msgstr[0] "Affichage de l'élément unique"
+msgstr[1] "Affichage de %1$d&ndash;%2$d éléments"
+
+#. translators: %d: total results
+#: woocommerce/loop/result-count.php:34
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] "Affichage du résultat unique"
+msgstr[1] "Affichage de tous les %d résultats"
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:28
+msgid "%s quantity"
+msgstr "%s quantité"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:367
+msgid "Just copy and paste your Google Analytics code to make your site ready to track your sites usage, with lots of helpful additional data."
+msgstr "Copiez et collez simplement votre code Google Analytics pour préparer votre site à suivre l'utilisation de vos sites, avec de nombreuses données supplémentaires utiles."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:365
+msgid "Google Analytics integration"
+msgstr "Intégration de Google Analytics"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:361
+msgid "This option allows you to make scrolling effect smooth with the mouse wheel and keyboard buttons."
+msgstr "Cette option vous permet de rendre l'effet de défilement fluide avec la molette de la souris et les boutons du clavier."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:359
+msgid "Smooth scrolling"
+msgstr "Défilement fluide"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:353
+msgid "Choose which products should show in the related products instead of pulling them in by category or tag."
+msgstr "Choisissez les produits à afficher dans les produits associés au lieu de les insérer par catégorie ou par tag."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:351
+msgid "Custom related products"
+msgstr "Produits connexes personnalisés"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:347
+msgid "Hypermarket theme is fully compatible and tested with most popular WordPress plugin that supports the creation of multilingual layouts."
+msgstr "Le thème Hypermarket est entièrement compatible et testé avec le plugin WordPress le plus populaire qui prend en charge la création de mises en page multilingues."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:345
+msgid "WPML compatible"
+msgstr "Compatible WPML"
+
+#: includes/classes/class-customizer.php:129
+msgid "Upgrade Now!"
+msgstr "Mettre à jour maintenant!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:339
+msgid "An easy, lightweight way to let your users sign up for several different MailChimp lists by creating multiple instances of the widget."
+msgstr "Un moyen simple et léger de permettre à vos utilisateurs de s'inscrire à plusieurs listes MailChimp différentes en créant plusieurs instances du widget."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:337
+msgid "MailChimp widget"
+msgstr "Widget MailChimp"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:333
+msgid "Toggle the display of core elements and enable some that are not included in WooCommerce core."
+msgstr "Basculez l'affichage des éléments principaux et activez certains qui ne sont pas inclus dans le noyau WooCommerce."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:331
+msgid "Product archive customizer"
+msgstr "Personnalisateur d'archives de produits"
+
+#: woocommerce/cart/cart.php:69
+msgid "Available on backorder"
+msgstr "Disponible en réapprovisionnement"
+
+#: includes/classes/class-customizer.php:52
+msgid "Logo"
+msgstr "Logo"
+
+#: includes/classes/class-payment-method-icons-widget.php:121
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:325
+msgid "Create a simple contact form using Ajax technology and advanced email address validation."
+msgstr "Créez un formulaire de contact simple en utilisant la technologie Ajax et une validation avancée des adresses courriel."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:323
+msgid "Contact form"
+msgstr "Formulaire de contact"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:319
+msgid "Easy-to-use team profile management system for Hypermarket theme. Load in your team members and display their profiles via a shortcode."
+msgstr "Système de gestion de profil d'équipe facile à utiliser pour le thème Hypermarché. Chargez les membres de votre équipe et affichez leurs profils via un shortcode."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:317
+msgid "Team members"
+msgstr "Membres de l'équipe"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:311
+msgid "Easily create, order and publicize FAQs. Optionally, display the questions in groups by tagging them, and even load them closed or readily open."
+msgstr "Créez, commandez et publiez facilement des FAQ. Vous pouvez éventuellement afficher les questions en groupes en les étiquetant et même les charger fermées ou facilement ouvertes."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:309
+msgid "FAQ"
+msgstr "FAQ"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:305
+msgid "Embed Google Maps with custom markers and info title on your WordPress website within a few seconds."
+msgstr "Intégrez Google Maps avec des marqueurs personnalisés et un titre d'information sur votre site Web WordPress en quelques secondes."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:303
+msgid "Google Maps"
+msgstr "Google Maps"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:297
+msgid "Convert WooCommerce sidebar into toggle-able filters bar & help customers to find what they really want."
+msgstr "Convertissez la barre latérale WooCommerce en barre de filtres à bascule et aidez les clients à trouver ce qu'ils veulent vraiment."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:295
+msgid "Shop filters bar"
+msgstr "Barre de filtres de la boutique"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:291
+msgid "Select the perfect layout for your shop header. There are 3 pre-designed layouts and each one provides a special design for your header area."
+msgstr "Sélectionnez la mise en page parfaite pour votre en-tête de boutique. Il existe 3 mises en page préconçues et chacune fournit une conception spéciale pour votre zone d'en-tête."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:289
+msgid "Header variations"
+msgstr "Variations d'en-tête"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:283
+msgid "Enhance the customer's product browsing experience by replacing the default behavior of WooCommerce pagination and loading products via Ajax!"
+msgstr "Améliorez l'expérience de navigation des produits du client en remplaçant le comportement par défaut de la pagination WooCommerce et en chargeant les produits via Ajax!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:281
+msgid "Load more products"
+msgstr "Charger plus de produits"
+
+#: woocommerce/myaccount/form-login.php:112
+msgid "Login here"
+msgstr "Connectez-vous ici"
+
+#: woocommerce/myaccount/form-login.php:112
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte?"
+
+#: woocommerce/myaccount/form-login.php:76
+msgid "Sign up, it's free."
+msgstr "Inscrivez-vous, c'est gratuit."
+
+#: woocommerce/myaccount/form-login.php:67
+msgid "Signup here"
+msgstr "Inscrivez-vous ici"
+
+#: woocommerce/myaccount/form-login.php:67
+msgid "Don't have an account?"
+msgstr "Vous n'avez pas de compte?"
+
+#: woocommerce/myaccount/form-login.php:32
+msgid "You are not logged in."
+msgstr "Vous n'êtes pas connecté."
+
+#: includes/classes/class-woocommerce.php:150
+msgid "Type and hit enter"
+msgstr "Tapez et appuyez sur Entrée"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:277
+msgid "Unique homepage layout that prominently displays a variety of products in an intuitive tabbed interface."
+msgstr "Mise en page unique de la page d'accueil qui affiche bien en évidence une variété de produits dans une interface à onglets intuitive."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:275
+msgid "Tabbed interface"
+msgstr "Interface à onglets"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:269
+msgid "Add an elegant hero component to the homepage template of your Hypermarket powered shop, or on any page via shortcode - Watch conversions soar!"
+msgstr "Ajoutez un élément de héros élégant au modèle de page d'accueil de votre boutique alimentée par Hypermarché, ou sur n'importe quelle page via un code court - Regardez les conversions monter en flèche!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:267
+msgid "Hero product"
+msgstr "Produit héros"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:263
+msgid "Easily remove the page title from specific single pages, shop or homepage template."
+msgstr "Supprimez facilement le titre de la page de pages uniques spécifiques, d'un modèle de boutique ou de page d'accueil."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:261
+msgid "Page title toggle"
+msgstr "Bascule du titre de la page"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:255
+msgid "Place the color filter widget on your shop & allow visitors to browse your products by using color filters."
+msgstr "Placez le widget de filtre de couleur sur votre boutique et permettez aux visiteurs de parcourir vos produits en utilisant des filtres de couleur."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:253
+msgid "Product color filters"
+msgstr "Filtres de couleur de produit"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:249
+msgid "Allows you to optionally, extend, add or remove the default and core WooCommerce product order by options on the shop page."
+msgstr "Vous permet éventuellement d'étendre, d'ajouter ou de supprimer la commande de produits par défaut et principale de WooCommerce par options sur la page de la boutique."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:247
+msgid "Extend product sorting"
+msgstr "Étendre le tri des produits"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:241
+msgid "Easy access to any fonts you want from Google Web Fonts, the best free fonts available. Choose between more than 600 fonts."
+msgstr "Accès facile à toutes les polices de votre choix à partir de Google Web Fonts, les meilleures polices gratuites disponibles. Choisissez parmi plus de 600 polices."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:239
+msgid "Typography"
+msgstr "Typographie"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:235
+msgid "Easily change the colors of all the main elements of the site to give your shop a unique look."
+msgstr "Changez facilement les couleurs de tous les éléments principaux du site pour donner à votre boutique un look unique."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:233
+msgid "Color scheme"
+msgstr "Schéma de couleur"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:227
+msgid "A clean and easy-to-use testimonials management system to load in what your customers are saying about your business."
+msgstr "Un système de gestion des témoignages propre et facile à utiliser pour intégrer ce que vos clients disent de votre entreprise."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:225
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:221
+msgid "Toggle the visibility and reorder the homepage components or any function hooked by Hypermarket theme or [H/M] Plus plugin."
+msgstr "Basculez la visibilité et réorganisez les composants de la page d'accueil ou toute fonction liée au thème Hypermarket ou au plugin [H/M] Plus."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:219
+msgid "Homepage control"
+msgstr "Contrôle de la page d'accueil"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:213
+msgid "A CTA is an ideal way to convert more of your passive website visitors into active leads and customers."
+msgstr "Un CTA est un moyen idéal de convertir davantage de visiteurs passifs de votre site Web en prospects et clients actifs."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:211
+msgid "Call to action widget"
+msgstr "Widget d'appel à l'action"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:207
+msgid "Service widget makes it really easy to select a Google material icon to go along with your feature."
+msgstr "Le widget de service permet de sélectionner très facilement une icône de matériel Google pour accompagner votre fonctionnalité."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:205
+msgid "Service widget"
+msgstr "Widget de service"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:199
+msgid "You can update the plugin automatically via the WordPress admin panel providing you have activated a valid license key."
+msgstr "Vous pouvez mettre à jour le plugin automatiquement via le panneau d'administration WordPress à condition d'avoir activé une clé de licence valide."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:197
+msgid "Automatic updates"
+msgstr "Mises à jour automatiques"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:193
+msgid "A full-width widgetized region which will display any widget added to this region above the Hypermarket footer widget area."
+msgstr "Une région widgetisée pleine largeur qui affichera tout widget ajouté à cette région au-dessus de la zone de widget du pied de page de l'Hypermarket."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:191
+msgid "Footer bar"
+msgstr "Barre de pied de page"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:185
+msgid "Embed YouTube or Vimeo videos on a call to action box using a popup lightbox overlay display."
+msgstr "Intégrez des vidéos YouTube ou Vimeo dans une boîte d'appel à l'action à l'aide d'un affichage de superposition de lightbox contextuel."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:183
+msgid "Video popup"
+msgstr "Popup vidéo"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:179
+msgid "Promote your sale campaigns in WooCommerce. Show a countdown box with the product on sale."
+msgstr "Faites la promotion de vos campagnes de vente dans WooCommerce. Montrez une boîte de compte à rebours avec le produit en vente."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:177
+msgid "Product countdown"
+msgstr "Compte à rebours du produit"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:530
+msgid "Gain direct access to us"
+msgstr "Accédez directement à nous"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:526
+msgid "You do not have to worry anymore about updates to the parent theme since there is no need to exclude your modified files from the updating process or to re-add your changes to fit the new version. After the creation of a Child Theme, you end up significantly speeding up your development time."
+msgstr "Vous n'avez plus à vous soucier des mises à jour du thème parent car il n'est pas nécessaire d'exclure vos fichiers modifiés du processus de mise à jour ou de rajouter vos modifications pour s'adapter à la nouvelle version. Après la création d'un thème enfant, vous finissez par accélérer considérablement votre temps de développement."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:525
+msgid "A Child Theme is a theme that inherits the same functionality and styling of another theme, called the parent theme. By creating and working on a child theme, you can add, modify or disable parts of your site without changing the original files of the parent theme."
+msgstr "Un thème enfant est un thème qui hérite des mêmes fonctionnalités et du même style qu'un autre thème, appelé thème parent. En créant et en travaillant sur un thème enfant, vous pouvez ajouter, modifier ou désactiver des parties de votre site sans changer les fichiers d'origine du thème parent."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:523
+msgid "What is a child theme?"
+msgstr "Qu'est-ce qu'un thème enfant?"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:516
+msgid "Buy Now"
+msgstr "Acheter maintenant"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:396
+msgid "By doing this, it ensures that the files and code in your child theme are always up-to-date and to prevent any problem that might occur."
+msgstr "Ce faisant, il garantit que les fichiers et le code de votre thème enfant sont toujours à jour et pour éviter tout problème qui pourrait survenir."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:395
+msgid "Whenever you finished updating the parent theme, make sure to check all the code you use in your child theme and update them as necessary to reflect any changes in the parent theme. You might back up your custom code first, update the files with the latest version, then apply your custom code back."
+msgstr "Chaque fois que vous avez terminé la mise à jour du thème parent, assurez-vous de vérifier tout le code que vous utilisez dans votre thème enfant et mettez-les à jour si nécessaire pour refléter les modifications apportées au thème parent. Vous pouvez d'abord sauvegarder votre code personnalisé, mettre à jour les fichiers avec la dernière version, puis réappliquer votre code personnalisé."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:394
+msgid "Remember!"
+msgstr "Rappelles toi!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:393
+msgid "You can do this by either using the \"Custom CSS\" field in our Customizer or adding your custom CSS code into the \"style.css\" file of your child theme."
+msgstr "Vous pouvez le faire en utilisant le champ \"CSS personnalisé\" dans notre outil de personnalisation ou en ajoutant votre code CSS personnalisé dans le fichier \"style.css\" de votre thème enfant."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:392
+msgid "Overriding Parent Theme's CSS"
+msgstr "Remplacer le CSS du thème parent"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:391
+msgid "* Note that, you must copy only the \"function() {...}\" part, NOT including the \"function_exists()\" wrapper."
+msgstr "* Notez que vous ne devez copier que la partie \"function () {...}\", sans inclure le wrapper \"function_exists ()\"."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:390
+msgid "If you want to edit the functions of the parent theme, for example, the \"hypermarket_comments_list()\" function, you can do that by copying only the function from the parent theme and put it into the \"functions.php\" file of your child theme."
+msgstr "Si vous souhaitez éditer les fonctions du thème parent, par exemple la fonction \"hypermarket_comments_list ()\", vous pouvez le faire en copiant uniquement la fonction du thème parent et en la plaçant dans le fichier \"functions.php\" de votre enfant thème."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:389
+msgid "Overriding Parent Theme's Functions"
+msgstr "Remplacer les fonctions du thème parent"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:388
+msgid "If you want to edit the code in the theme's template files like \"header.php\", \"index.php\", etc, you can just copy the file from the parent theme and put it into your child theme folder then edit it from there."
+msgstr "Si vous souhaitez modifier le code dans les fichiers de modèle du thème tels que \"header.php\", \"index.php\", etc., vous pouvez simplement copier le fichier du thème parent et le placer dans votre dossier de thème enfant, puis le modifier à partir de là ."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:387
+msgid "Overriding Parent Theme's Template Files"
+msgstr "Remplacer les fichiers de modèle du thème parent"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:383
+msgid "Download Hypermarket Child Theme"
+msgstr "Télécharger le thème enfant Hypermarket"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:380
+msgid "To download a blank Hypermarket child theme, please navigate to:"
+msgstr "Pour télécharger un thème enfant Hypermarket vierge, accédez à:"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:378
+msgid "If you want to customize the theme at coding level, not just CSS, we would strongly suggest using a child theme for that. A child theme allows you to override the parent theme's functions, template files and CSS so you will be able to adjust them as you want."
+msgstr "Si vous souhaitez personnaliser le thème au niveau du codage, pas seulement CSS, nous vous suggérons fortement d'utiliser un thème enfant pour cela. Un thème enfant vous permet de remplacer les fonctions, les fichiers de modèle et le CSS du thème parent afin que vous puissiez les ajuster comme vous le souhaitez."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:376
+msgid "Make any customization using a child theme"
+msgstr "Faites n'importe quelle personnalisation à l'aide d'un thème enfant"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:82
+msgid "Child Theme"
+msgstr "Thème enfant"
+
+#: includes/classes/class-customizer.php:128
+msgid "Hypermarket Plus"
+msgstr "Hypermarket Plus"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:517
+msgid "Live Demo"
+msgstr "Démo en direct"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:514
+msgid "Being on the cutting edge of WordPress development is something we wanted to do from the start. Because of that, we made sure that we avoided the use of clunky additional admin panels and instead, opted to utilize a powerful, options panel using Customizer API. With this setup, you can preview all of the changes you make to your site live without any need to switch windows or refresh the browser in addition to searching for exactly what you need. When you are happy with your changes, hit \"Save Changes\" button and your updates will go live."
+msgstr "Être à la pointe du développement WordPress est quelque chose que nous voulions faire depuis le début. Pour cette raison, nous nous sommes assurés d'éviter l'utilisation de panneaux d'administration supplémentaires maladroits et avons plutôt choisi d'utiliser un puissant panneau d'options utilisant l'API Customizer. Avec cette configuration, vous pouvez prévisualiser toutes les modifications que vous apportez à votre site en direct sans avoir besoin de changer de fenêtre ou d'actualiser le navigateur en plus de rechercher exactement ce dont vous avez besoin. Lorsque vous êtes satisfait de vos modifications, cliquez sur le bouton \"Enregistrer les modifications\" et vos mises à jour seront mises en ligne."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:507
+#: includes/classes/class-hypermarket-welcome-screen.php:511
+msgid "Hypermarket Plus!"
+msgstr "Hypermarket Plus!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:171
+msgid "Image & content slider which supports touch navigation with a swipe gesture."
+msgstr "Curseur d'image et de contenu qui prend en charge la navigation tactile avec un geste de balayage."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:169
+msgid "Hero slider"
+msgstr "Héro carrousel"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:165
+msgid "Optionally remove the Hypermarket credit and add your own custom copyright message, including HTML."
+msgstr "Supprimez éventuellement le crédit Hypermarché et ajoutez votre propre message de copyright personnalisé, y compris HTML."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:163
+msgid "Copyright credit"
+msgstr "Crédit de copyright"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:157
+msgid "Buttons designed to be minimal, yet powerful, with support of popular networks to make your products go viral and get more traffic."
+msgstr "Des boutons conçus pour être minimes, mais puissants, avec la prise en charge des réseaux populaires pour rendre vos produits viraux et générer plus de trafic."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:155
+msgid "Share buttons"
+msgstr "Partager les boutons"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:151
+msgid "An easy way to create sortable lightbox galleries consisting of images & videos."
+msgstr "Un moyen simple de créer des galeries lightbox triables composées d'images et de vidéos."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:149
+msgid "Gallery post type"
+msgstr "Type de publication dans la galerie"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:143
+msgid "Fetch & display post content without the user moving away from the current page."
+msgstr "Récupérez et affichez le contenu de l'article sans que l'utilisateur ne quitte la page actuelle."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:141
+msgid "Ajaxify blog posts"
+msgstr "Articles de blog Ajaxify"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:137
+msgid "Secondary product thumbnail on archives that is revealed when you hover over the main product image."
+msgstr "Vignette de produit secondaire sur les archives qui est révélée lorsque vous survolez l'image principale du produit."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:135
+msgid "Product image flipper"
+msgstr "Image du produit flipper"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:128
+msgid "Everything you need to build stunning e-commerce website in a fast & efficient way."
+msgstr "Tout ce dont vous avez besoin pour créer un site Web de commerce électronique époustouflant de manière rapide et efficace."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:126
+msgid "Are You Still Free? Go Plus Now!"
+msgstr "Êtes-vous toujours libre? Allez plus maintenant!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:117
+msgid "Going on vacation? Use Woo Store Vacation settings to make sure your buyers are not disappointed by buying items and unexpectedly waiting a long time to receive them."
+msgstr "Partir en vacances? Utilisez les paramètres de vacances de Woo Store pour vous assurer que vos acheteurs ne sont pas déçus en achetant des articles et en attendant de manière inattendue de les recevoir."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:115
+msgid "Woo Store Vacataion - Put your shop on pause or hold mode for a certain amount of time"
+msgstr "Woo Store Vacation - Mettez votre boutique en pause ou en mode attente pendant un certain temps"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:80
+#: includes/classes/class-hypermarket-welcome-screen.php:601
+msgid "Go Plus!"
+msgstr "Go Plus!"
+
+#. Template Name of the theme
+msgid "Homepage"
+msgstr "Page d'accueil"
+
+#. Template Name of the theme
+msgid "Fluid Template"
+msgstr "Gabarit fluide"
+
+#: woocommerce/single-product/up-sells.php:28
+msgid "You May Also Like&hellip;"
+msgstr "Tu pourrais aussi aimer&hellip;"
+
+#: woocommerce/single-product/related.php:28
+msgid "Related Products"
+msgstr "Produits connexes"
+
+#: woocommerce/single-product/add-to-cart/variable.php:48
+msgid "Clear"
+msgstr "Nettoyer"
+
+#: woocommerce/single-product/add-to-cart/variable.php:33
+msgid "This product is currently out of stock and unavailable."
+msgstr "Ce produit est actuellement en rupture d'inventaire et indisponible."
+
+#: woocommerce/myaccount/form-lost-password.php:39
+msgid "Reset Password"
+msgstr "Réinitialiser le mot de passe"
+
+#: woocommerce/myaccount/form-lost-password.php:32
+msgid "Username or email*"
+msgstr "Nom d'utilisateur ou adresse courriel*"
+
+#: woocommerce/myaccount/form-lost-password.php:29
+msgid "Enter your username or email address. You will receive a link to create a new password via email."
+msgstr "Saisissez votre nom d'utilisateur ou votre adresse courriel. Vous recevrez un lien pour créer un nouveau mot de passe par courriel."
+
+#: woocommerce/myaccount/form-login.php:83
+msgid "Username*"
+msgstr "Nom d'utilisateur*"
+
+#: woocommerce/myaccount/form-login.php:82
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: woocommerce/myaccount/form-login.php:74
+#: woocommerce/myaccount/form-login.php:104
+msgid "Register"
+msgstr "S'inscrire"
+
+#: woocommerce/myaccount/form-login.php:42
+#: woocommerce/myaccount/form-login.php:93
+msgid "Password*"
+msgstr "Mot de passe*"
+
+#: woocommerce/myaccount/form-login.php:38
+msgid "Username or email address*"
+msgstr "Nom d'utilisateur ou adresse courriel*"
+
+#: woocommerce/myaccount/form-login.php:37
+msgid "Username or email address"
+msgstr "Nom d'utilisateur ou adresse courriel"
+
+#: woocommerce/myaccount/form-edit-address.php:41
+msgid "Save Address"
+msgstr "Enregistrer l'adresse"
+
+#: woocommerce/myaccount/form-edit-address.php:21
+msgid "Shipping Address"
+msgstr "Adresse de livraison"
+
+#: woocommerce/myaccount/form-edit-address.php:21
+msgid "Billing Address"
+msgstr "Adresse de facturation"
+
+#: woocommerce/myaccount/form-edit-account.php:71
+msgid "Save changes"
+msgstr "Sauvegarder les modifications"
+
+#: woocommerce/myaccount/form-edit-account.php:63
+#: woocommerce/myaccount/form-edit-account.php:64
+msgid "Confirm New Password"
+msgstr "Confirmer le nouveau mot de passe"
+
+#: woocommerce/myaccount/form-edit-account.php:59
+#: woocommerce/myaccount/form-edit-account.php:60
+msgid "New Password (leave blank to leave unchanged)"
+msgstr "Nouveau mot de passe (laissez vide pour laisser inchangé)"
+
+#: woocommerce/myaccount/form-edit-account.php:54
+#: woocommerce/myaccount/form-edit-account.php:55
+msgid "Current Password (leave blank to leave unchanged)"
+msgstr "Mot de passe actuel (laissez vide pour laisser inchangé)"
+
+#: woocommerce/myaccount/form-edit-account.php:51
+msgid "Password Change"
+msgstr "Changement de mot de passe"
+
+#: woocommerce/myaccount/form-edit-account.php:46
+#: woocommerce/myaccount/form-login.php:88
+msgid "Email address*"
+msgstr "Adresse courriel*"
+
+#: woocommerce/myaccount/form-edit-account.php:45
+#: woocommerce/myaccount/form-login.php:87
+msgid "Email address"
+msgstr "Adresse courriel"
+
+#: woocommerce/myaccount/form-edit-account.php:36
+msgid "Last name*"
+msgstr "Nom de famille*"
+
+#: woocommerce/myaccount/form-edit-account.php:35
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: woocommerce/myaccount/form-edit-account.php:32
+msgid "First name*"
+msgstr "Prénom*"
+
+#: woocommerce/myaccount/form-edit-account.php:31
+msgid "First name"
+msgstr "Prénom"
+
+#: woocommerce/myaccount/form-edit-account.php:28
+msgid "Account Details"
+msgstr "Détails du compte"
+
+#: woocommerce/global/quantity-input.php:33
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "Qté"
+
+#: woocommerce/global/form-login.php:55 woocommerce/myaccount/form-login.php:59
+msgid "Lost your password?"
+msgstr "Mot de passe perdu?"
+
+#: woocommerce/global/form-login.php:49 woocommerce/myaccount/form-login.php:30
+#: woocommerce/myaccount/form-login.php:54
+msgid "Login"
+msgstr "S'identifier"
+
+#: woocommerce/global/form-login.php:45 woocommerce/myaccount/form-login.php:49
+msgid "Remember me"
+msgstr "Souviens-toi de moi"
+
+#: woocommerce/global/form-login.php:36 woocommerce/global/form-login.php:37
+#: woocommerce/myaccount/form-login.php:41
+#: woocommerce/myaccount/form-login.php:92
+msgid "Password"
+msgstr "Mot de passe"
+
+#: woocommerce/global/form-login.php:32 woocommerce/global/form-login.php:33
+#: woocommerce/myaccount/form-lost-password.php:31
+msgid "Username or email"
+msgstr "Nom d'utilisateur ou courriel"
+
+#: woocommerce/checkout/form-login.php:31
+msgid "If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section."
+msgstr "Si vous avez déjà acheté chez nous, veuillez saisir vos coordonnées dans les champs ci-dessous. Si vous êtes un nouveau client, veuillez passer à la section Facturation et expédition."
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr "Cliquez ici pour vous identifier"
+
+#: woocommerce/checkout/form-login.php:25
+msgid "Returning customer?"
+msgstr "Déjà client?"
+
+#: woocommerce/checkout/form-checkout.php:55
+msgid "Your order"
+msgstr "Votre commande"
+
+#: woocommerce/checkout/form-checkout.php:27
+msgid "You must be logged in to checkout."
+msgstr "Vous devez être connecté pour payer."
+
+#: woocommerce/cart/shipping-calculator.php:93
+msgid "Update Totals"
+msgstr "Mettre à jour les totaux"
+
+#: woocommerce/cart/shipping-calculator.php:88
+msgid "Postcode / ZIP"
+msgstr "Code postal"
+
+#: woocommerce/cart/shipping-calculator.php:81
+msgid "City"
+msgstr "Ville"
+
+#: woocommerce/cart/shipping-calculator.php:57
+msgid "Select a state&hellip;"
+msgstr "Sélectionner un état&hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:50
+#: woocommerce/cart/shipping-calculator.php:56
+#: woocommerce/cart/shipping-calculator.php:71
+msgid "State / county"
+msgstr "État / Pays"
+
+#: woocommerce/cart/shipping-calculator.php:30
+msgid "Select a country&hellip;"
+msgstr "Choisissez un pays&hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate"
+msgstr "Calculer"
+
+#: woocommerce/cart/mini-cart.php:107
+#: woocommerce/cart/proceed-to-checkout-button.php:29
+msgid "Checkout"
+msgstr "Check-out"
+
+#: woocommerce/cart/mini-cart.php:106
+msgid "View Cart"
+msgstr "Voir le panier"
+
+#: woocommerce/cart/mini-cart.php:86 woocommerce/cart/mini-cart.php:90
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#: woocommerce/cart/cross-sells.php:29
+msgid "You May be Interested in&hellip;"
+msgstr "Vous pourriez être intéressé par&hellip;"
+
+#: woocommerce/cart/cart.php:125
+#: woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Update Cart"
+msgstr "Mise à jour panier"
+
+#: woocommerce/cart/cart.php:120 woocommerce/checkout/form-coupon.php:36
+msgid "Apply Coupon"
+msgstr "Appliquer Coupon"
+
+#: woocommerce/cart/cart.php:116 woocommerce/checkout/form-coupon.php:32
+msgid "Enter coupon code"
+msgstr "Entrer le code"
+
+#: woocommerce/cart/cart.php:115 woocommerce/checkout/form-coupon.php:31
+msgid "Coupon:"
+msgstr "Coupon :"
+
+#: woocommerce/cart/cart.php:112 woocommerce/checkout/form-coupon.php:27
+msgid "Have discount coupon?"
+msgstr "Vous avez un coupon?"
+
+#: woocommerce/cart/cart.php:95 woocommerce/cart/mini-cart.php:60
+msgid "Remove this item"
+msgstr "Enlever cet article"
+
+#: woocommerce/cart/cart.php:32
+msgid "in cart"
+msgstr "dans le panier"
+
+#: woocommerce/cart/cart.php:31
+msgid "Currently %1$s %2$d item(s)"
+msgstr "Actuellement %1$s %2$d élément(s)"
+
+#: woocommerce/cart/cart-empty.php:32
+msgid "Return to shop"
+msgstr "Retour à la boutique"
+
+#: woocommerce/cart/mini-cart.php:76 includes/classes/class-woocommerce.php:572
+msgid "Most likely, you just have not put anything into your basket."
+msgstr "Très probablement, vous n'avez rien mis dans votre panier."
+
+#: template-parts/woocommerce/hypermarket-single-product-gallery.php:124
+msgid "Awaiting product image"
+msgstr "En attente d'image du produit"
+
+#: template-parts/woocommerce/hypermarket-shop-by-category.php:19
+msgid "Catalog"
+msgstr "Catalogue"
+
+#: template-parts/woocommerce/hypermarket-no-products-found.php:15
+msgid "It looks like no products were found matching your selection. Maybe try one of the links below or a search?"
+msgstr "Il semble qu'aucun produit ne correspond à votre sélection. Essayez peut-être l'un des liens ci-dessous ou une recherche?"
+
+#: template-parts/woocommerce/hypermarket-new-arrivals.php:13
+#: template-parts/woocommerce/hypermarket-no-products-found.php:43
+msgid "New Arrivals"
+msgstr "Nouvelles Arrivées"
+
+#: template-parts/woocommerce/hypermarket-best-sellers.php:13
+#: template-parts/woocommerce/hypermarket-no-products-found.php:24
+msgid "Best Sellers"
+msgstr "Meilleurs vendeurs"
+
+#: template-parts/hypermarket-skip-links.php:15
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: template-parts/hypermarket-skip-links.php:12
+msgid "Skip to navigation"
+msgstr "Aller à la navigation"
+
+#: template-parts/hypermarket-single-paging.php:14
+msgid "Pages:"
+msgstr "Page :"
+
+#: template-parts/hypermarket-post-meta.php:41
+msgid "(Sticky)"
+msgstr "(Épingler)"
+
+#: template-parts/hypermarket-post-entry.php:50
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: template-parts/hypermarket-paging-navigation.php:64
+#: template-parts/hypermarket-paging-navigation.php:66
+#: template-parts/hypermarket-single-paging.php:18
+msgid "Next"
+msgstr "Suivant"
+
+#: template-parts/hypermarket-paging-navigation.php:55
+#: template-parts/hypermarket-paging-navigation.php:57
+#: template-parts/hypermarket-single-paging.php:19
+msgid "Prev"
+msgstr "Précédent"
+
+#: loop-templates/content-search.php:22
+msgid "Search Results for: %s"
+msgstr "Résultats de la recherche pour : %s"
+
+#: loop-templates/content-post.php:42
+#: template-parts/hypermarket-post-meta.php:18
+msgid "by"
+msgstr "par"
+
+#: loop-templates/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Il semble que nous ne trouvons pas ce que vous cherchez. Peut-être qu'une recherche peut vous aider."
+
+#: loop-templates/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Désolé, mais rien ne correspond à vos termes de recherche. Veuillez réessayer avec d'autres mots-clés."
+
+#: loop-templates/content-none.php:18
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Êtes-vous prêts à publier votre première publication? <a href=\"%1$s\"> Commencez ici </a>."
+
+#: loop-templates/content-none.php:13
+msgid "Nothing Found"
+msgstr "Rien n'a été trouvé"
+
+#: loop-templates/content-post.php:51 loop-templates/content-author.php:66
+#: template-parts/hypermarket-post-entry.php:37
+msgid "in"
+msgstr "dans"
+
+#: loop-templates/content-author.php:63
+msgid " ago"
+msgstr " depuis"
+
+#: loop-templates/content-author.php:51
+msgid "Posts by"
+msgstr "Messages par"
+
+#: loop-templates/content-author.php:22
+msgid "About:"
+msgstr "À propos :"
+
+#: includes/woocommerce-template-functions.php:657
+msgid "Back To Cart"
+msgstr "Retour au panier"
+
+#: includes/woocommerce-template-functions.php:124
+msgid "Sale"
+msgstr "Vente"
+
+#: includes/extras.php:193
+msgid " | Get %1$s for free."
+msgstr " | Obtenez %1$s gratuitement."
+
+#: includes/extras.php:190
+msgid "Y"
+msgstr "Y"
+
+#: includes/extras.php:173
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: includes/classes/class-woocommerce.php:407
+msgctxt "placeholder"
+msgid "Confirm password*"
+msgstr "Confirmez le mot de passe*"
+
+#: includes/classes/class-woocommerce.php:398
+msgctxt "placeholder"
+msgid "Password*"
+msgstr "Mot de passe*"
+
+#: includes/classes/class-woocommerce.php:384
+msgctxt "placeholder"
+msgid "Username*"
+msgstr "Nom d'utilisateur*"
+
+#: includes/classes/class-woocommerce.php:297
+#: includes/classes/class-woocommerce.php:369
+#: includes/classes/class-woocommerce.php:516
+msgctxt "placeholder"
+msgid "City*"
+msgstr "Ville*"
+
+#: includes/classes/class-woocommerce.php:289
+#: includes/classes/class-woocommerce.php:361
+#: includes/classes/class-woocommerce.php:508
+msgctxt "placeholder"
+msgid "ZIP code*"
+msgstr "Code postal*"
+
+#: includes/classes/class-woocommerce.php:281
+#: includes/classes/class-woocommerce.php:353
+#: includes/classes/class-woocommerce.php:500
+msgctxt "placeholder"
+msgid "State*"
+msgstr "État*"
+
+#: includes/classes/class-woocommerce.php:273
+#: includes/classes/class-woocommerce.php:345
+#: includes/classes/class-woocommerce.php:492
+msgctxt "placeholder"
+msgid "Country*"
+msgstr "Pays*"
+
+#: includes/classes/class-woocommerce.php:265
+#: includes/classes/class-woocommerce.php:337
+#: includes/classes/class-woocommerce.php:484
+msgctxt "placeholder"
+msgid "Company"
+msgstr "Compagnie"
+
+#: includes/classes/class-woocommerce.php:257
+#: includes/classes/class-woocommerce.php:329
+#: includes/classes/class-woocommerce.php:476
+msgctxt "placeholder"
+msgid "Address 2"
+msgstr "Adresse 2*"
+
+#: includes/classes/class-woocommerce.php:249
+#: includes/classes/class-woocommerce.php:321
+#: includes/classes/class-woocommerce.php:468
+msgctxt "placeholder"
+msgid "Address 1*"
+msgstr "Adresse 1*"
+
+#: includes/classes/class-woocommerce.php:241
+#: includes/classes/class-woocommerce.php:543
+msgctxt "placeholder"
+msgid "Phone*"
+msgstr "Téléphone*"
+
+#: includes/classes/class-woocommerce.php:233
+#: includes/classes/class-woocommerce.php:535
+msgctxt "placeholder"
+msgid "Email*"
+msgstr "Courriel*"
+
+#: includes/classes/class-woocommerce.php:225
+#: includes/classes/class-woocommerce.php:313
+#: includes/classes/class-woocommerce.php:460
+msgctxt "placeholder"
+msgid "Last name*"
+msgstr "Nom de famille*"
+
+#: includes/classes/class-woocommerce.php:217
+#: includes/classes/class-woocommerce.php:305
+#: includes/classes/class-woocommerce.php:452
+msgctxt "placeholder"
+msgid "First name*"
+msgstr "Prénom*"
+
+#: includes/classes/class-woocommerce.php:201
+msgid "Leave Review"
+msgstr "Laisser un avis"
+
+#: includes/classes/class-woocommerce.php:199
+msgid "Review*"
+msgstr "Avis*"
+
+#: includes/classes/class-woocommerce.php:195
+msgid "Very poor"
+msgstr "Très pauvre"
+
+#: includes/classes/class-woocommerce.php:194
+msgid "Not that bad"
+msgstr "Pas si mal"
+
+#: includes/classes/class-woocommerce.php:193
+msgid "Average"
+msgstr "Moyen"
+
+#: includes/classes/class-woocommerce.php:192
+msgid "Good"
+msgstr "Bien"
+
+#: includes/classes/class-woocommerce.php:191
+msgid "Perfect"
+msgstr "Parfait"
+
+#: includes/classes/class-woocommerce.php:190
+msgid "Rate*"
+msgstr "Évaluation*"
+
+#: includes/classes/class-woocommerce.php:189
+msgid "Your Rating"
+msgstr "Votre note"
+
+#: includes/classes/class-woocommerce.php:178
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Soyez le premier à laisser un avis &ldquo;%s&rdquo;"
+
+#: includes/classes/class-woocommerce.php:178
+msgid "Leave a review"
+msgstr "Laisser un commentaire"
+
+#: searchform.php:12
+msgid "Search"
+msgstr "Chercher"
+
+#: searchform.php:11 includes/classes/class-woocommerce.php:149
+msgid "Search for:"
+msgstr "Rechercher :"
+
+#: includes/classes/class-social-icons-widget.php:168
+msgid "Icon URL %1$s:"
+msgstr "URL de l'icône %1$s :"
+
+#: includes/classes/class-social-icons-widget.php:163
+msgid "Youtube"
+msgstr "YouTube"
+
+#: includes/classes/class-social-icons-widget.php:162
+msgid "WordPress"
+msgstr "WordPress"
+
+#: includes/classes/class-social-icons-widget.php:161
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: includes/classes/class-social-icons-widget.php:160
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/classes/class-social-icons-widget.php:159
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/classes/class-social-icons-widget.php:158
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+#: includes/classes/class-social-icons-widget.php:157
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/classes/class-social-icons-widget.php:156
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: includes/classes/class-social-icons-widget.php:155
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/classes/class-social-icons-widget.php:101
+msgid "Follow Us"
+msgstr "Suivez nous"
+
+#: includes/classes/class-social-icons-widget.php:30
+msgid "A simple widget that displays social network icons."
+msgstr "Un widget simple qui affiche les icônes des réseaux sociaux."
+
+#: includes/classes/class-social-icons-widget.php:27
+msgid "Social Icons"
+msgstr "Icônes sociales"
+
+#: includes/classes/class-payment-method-icons-widget.php:136
+msgid "SSL Certificate"
+msgstr "Certificat SSL"
+
+#: includes/classes/class-payment-method-icons-widget.php:135
+msgid "American Express"
+msgstr "American Express"
+
+#: includes/classes/class-payment-method-icons-widget.php:134
+msgid "PayPal"
+msgstr "PayPal"
+
+#: includes/classes/class-payment-method-icons-widget.php:133
+msgid "MasterCard"
+msgstr "Mastercard"
+
+#: includes/classes/class-payment-method-icons-widget.php:132
+msgid "Skrill"
+msgstr "Skrill"
+
+#: includes/classes/class-payment-method-icons-widget.php:131
+msgid "Visa"
+msgstr "Visa"
+
+#: includes/classes/class-payment-method-icons-widget.php:130
+#: includes/classes/class-social-icons-widget.php:154
+msgid "Select"
+msgstr "Sélectionner"
+
+#: includes/classes/class-payment-method-icons-widget.php:127
+#: includes/classes/class-social-icons-widget.php:151
+msgid "Icon %1$s:"
+msgstr "Icône %1$s :"
+
+#: includes/classes/class-payment-method-icons-widget.php:117
+#: includes/classes/class-social-icons-widget.php:145
+msgid "Title"
+msgstr "Titre"
+
+#: includes/classes/class-payment-method-icons-widget.php:96
+msgid "Pay Secure"
+msgstr "Payez en toute sécurité"
+
+#: includes/classes/class-payment-method-icons-widget.php:30
+msgid "A simple widget that displays payment method icons."
+msgstr "Un widget simple qui affiche les icônes de mode de paiement."
+
+#: includes/classes/class-payment-method-icons-widget.php:27
+msgid "Payment Method Icons"
+msgstr "Icônes de mode de paiement"
+
+#: includes/classes/class-hypermarket.php:229
+msgid "Widgetized Footer Area %d."
+msgstr "Zone de pied de page du widget %d."
+
+#: includes/classes/class-hypermarket.php:227
+msgid "Footer %d"
+msgstr "Pied de page %d"
+
+#: includes/classes/class-hypermarket.php:218
+msgid "Widgets added to this region will appear in shop archive pages."
+msgstr "Les widgets ajoutés à cette région apparaîtront dans les pages d'archives de la boutique."
+
+#: includes/classes/class-hypermarket.php:216
+msgid "Shop Sidebar"
+msgstr "Barre latérale de la boutique"
+
+#: includes/classes/class-hypermarket.php:115
+msgid "Primary Menu"
+msgstr "Menu primaire"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:642
+msgid "Dismiss this notice."
+msgstr "Ne tenez pas compte de cet avertissement."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:638
+msgid "Install and activate %s to start your e-commerce website now!"
+msgstr "Installez et activez %s pour démarrer votre site Web de commerce électronique maintenant!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:635
+msgid "Hypermarket is almost ready to help you start selling :)"
+msgstr "L'Hypermarket est presque prêt à vous aider à commencer à vendre :)"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:599
+msgid "Get the Tips"
+msgstr "Obtenez les conseils"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:597
+msgid "Welcome to the Hypermarket theme! Clearly, you have impeccable taste in WooCommerce themes; we salute your fine choice!"
+msgstr "Bienvenue sur le thème Hypermarket! De toute évidence, vous avez un goût impeccable dans les thèmes WooCommerce; nous saluons votre beau choix!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:596
+msgid "WooHoo! :)"
+msgstr "WooHoo! :)"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:556
+msgid "Respond to any code review feedback."
+msgstr "Répondez à tout commentaire de révision de code."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:555
+msgid "Create a new PR in GitHub."
+msgstr "Créez un nouveau PR dans GitHub."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:554
+msgid "Push to your origin repository."
+msgstr "Poussez vers votre référentiel d'origine."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:553
+msgid "Do the work, write good commit messages, and read the CONTRIBUTING file if there is one."
+msgstr "Faites le travail, écrivez de bons messages de validation et lisez le fichier CONTRIBUTING s'il y en a un."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:552
+msgid "Branch for each separate piece of work."
+msgstr "Branche pour chaque œuvre distincte."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:551
+msgid "Create an upstream remote and sync your local copy before you branch."
+msgstr "Créez une télécommande en amont et synchronisez votre copie locale avant de créer une branche."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:550
+msgid "Fork the project & clone locally."
+msgstr "Forkez le projet et clonez localement."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:547
+msgid "The fundamentals are:"
+msgstr "Les fondamentaux sont:"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:542
+msgid ".mo: This is the \"machine object file.\" When your translation is complete, you will convert or export your .po file to this file type so that WordPress can use it."
+msgstr ".mo: Il s'agit du \"fichier objet machine\". Une fois votre traduction terminée, vous allez convertir ou exporter votre fichier .po vers ce type de fichier afin que WordPress puisse l'utiliser."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:541
+msgid ".po: The \"portable object\" file contains the original text and the translations."
+msgstr ".po: Le fichier \"objet portable\" contient le texte original et les traductions."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:540
+msgid ".pot: This file is a \"portable object template\" that contains all of the text to be translated."
+msgstr ".pot: Ce fichier est un \"modèle d'objet portable\" qui contient tout le texte à traduire."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:537
+msgid "Files that enable translation"
+msgstr "Fichiers qui permettent la traduction"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:533
+msgid "Our top priority is that you have a great experience with us and learn to create amazing code-free websites quickly."
+msgstr "Notre priorité absolue est que vous ayez une expérience formidable avec nous et que vous appreniez à créer rapidement des sites Web incroyables sans code."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:532
+msgid "As you might have already gathered, we love hearing your feedback, And you seem to love giving it!"
+msgstr "Comme vous l'avez peut-être déjà compris, nous adorons entendre vos commentaires et vous semblez adorer leur donner!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:501
+msgid "HTML5 Number polyfill - A polyfill for implementing the HTML5 number element in browsers that do not currently support it"
+msgstr "HTML5 Number polyfill - Un polyfill pour implémenter l'élément HTML5 number dans les navigateurs qui ne le prennent pas actuellement en charge"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:500
+msgid "Skip link focus - Helps with accessibility for keyboard only users"
+msgstr "Skip link focus - Helps with accessibility for keyboard only users"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:499
+msgid "WooCommerce - An open source eCommerce plugin for WordPress"
+msgstr "WooCommerce - Un plugin de commerce électronique open source pour WordPress"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:498
+msgid "WP Bootstrap Navwalker - A custom WordPress nav walker class"
+msgstr "WP Bootstrap Navwalker - Une classe de marcheur de navigation WordPress personnalisée"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:497
+msgid "UnderStrap - Combines Automattics Underscores Starter Theme and Bootstrap 4"
+msgstr "UnderStrap - Combine le thème de démarrage Automattics Underscores et Bootstrap 4"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:496
+msgid "Material Design Icons - Icon font for the web"
+msgstr "Icônes de conception matérielle - Police d'icônes pour le web"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:495
+msgid "matchHeight - makes the height of all selected elements exactly equal"
+msgstr "matchHeight - rend la hauteur de tous les éléments sélectionnés exactement égale"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:494
+msgid "Waves - Click effect inspired by Googles Material Design"
+msgstr "Waves - Effet clic inspiré de la conception matérielle de Google"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:493
+msgid "Smooth Scroll - An extension for smooth scrolling in Google Chrome"
+msgstr "Smooth Scroll - Une extension pour un défilement fluide dans Google Chrome"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:492
+msgid "Velocity.js - Accelerated JavaScript animation"
+msgstr "Velocity.js - Animation JavaScript accélérée"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:491
+msgid "Bootstrap - Most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web"
+msgstr "Bootstrap - Framework HTML, CSS et JS le plus populaire pour le développement de projets réactifs et mobiles sur le Web"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:490
+msgid "Modernizr - JavaScript library that detects HTML5 and CSS3 features in the users browser"
+msgstr "Modernizr - bibliothèque JavaScript qui détecte les fonctionnalités HTML5 et CSS3 dans le navigateur des utilisateurs"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:489
+msgid "jQuery - most popular feature-rich JavaScript library"
+msgstr "jQuery - la bibliothèque JavaScript riche en fonctionnalités la plus populaire"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:488
+msgid "Bourbon - A simple and lightweight mixin library for Sass"
+msgstr "Bourbon - Une bibliothèque mixin simple et légère pour Sass"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:486
+msgid "While making Hypermarket theme, we used third-party plugins and resources, and want to thank their creators:"
+msgstr "Lors de la création du thème Hypermarket, nous avons utilisé des plugins et des ressources tiers et souhaitons remercier leurs créateurs:"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:484
+msgid "Resources & Reference"
+msgstr "Ressources et références"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:470
+msgid "Contribute in the style of the project to the best of your abilities. This may mean using indents, semi colons or comments differently than you would in your own repository."
+msgstr "Contribuez au style du projet au mieux de vos capacités. Cela peut signifier utiliser des retraits, des points-virgules ou des commentaires différemment de ce que vous feriez dans votre propre référentiel."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:469
+msgid "If changes are visual and related to any aspects of user interface be sure to include screenshots of the before and after if your changes include differences in HTML/CSS."
+msgstr "Si les modifications sont visuelles et liées à des aspects de l'interface utilisateur, assurez-vous d'inclure des captures d'écran de l'avant et de l'après si vos modifications incluent des différences HTML / CSS."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:468
+msgid "It is best to test. Run your changes against any existing tests if they exist and create new ones when needed. Whether tests exist or not, make sure your changes don not break the existing Hypermarket project or have any conflicts with WordPress or WooCommerce functionality."
+msgstr "Il vaut mieux tester. Exécutez vos modifications par rapport à tous les tests existants s'ils existent et créez-en de nouveaux si nécessaire. Que des tests existent ou non, assurez-vous que vos modifications n'interrompent pas le projet Hypermarket existant ou n'entrent pas en conflit avec les fonctionnalités de WordPress ou WooCommerce."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:467
+msgid "Be clear about what problem is occurring and how someone can recreate that problem or why your feature will help. Then be equally as clear about the steps you took to make your changes."
+msgstr "Soyez clair sur le problème qui se produit et comment quelqu'un peut recréer ce problème ou pourquoi votre fonctionnalité aidera. Ensuite, soyez tout aussi clair sur les étapes que vous avez suivies pour apporter vos modifications."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:466
+msgid "Create a branch for your edits."
+msgstr "Créez une branche pour vos modifications."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:464
+msgid "UpStream generally refers to the original repo that you have forked."
+msgstr "UpStream fait généralement référence au référentiel d'origine que vous avez forké."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:463
+msgid "Fork the Hypermarket theme repository and clone it locally. Connect your local to the original \"upstream\" repository by adding it as a remote. Pull in changes from \"upstream\" often so that you stay up to date so that when you submit your pull request, merge conflicts will be less likely."
+msgstr "Forkez le référentiel de thèmes Hypermarket et clonez-le localement. Connectez votre local au référentiel «amont» d'origine en l'ajoutant en tant que distant. Apportez souvent les modifications «en amont» afin de rester à jour afin que lorsque vous soumettez votre pull request, les conflits de fusion seront moins probables."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:461
+msgid "Pull Request Pro Tips"
+msgstr "Pull Request Pro Tips"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:459
+msgid "Once you have submitted a pull request we can compare your branch to the existing one and decide whether or not to incorporate (pull in) your changes."
+msgstr "Une fois que vous avez soumis une demande d'extraction, nous pouvons comparer votre succursale à celle existante et décider d'incorporer (intégrer) ou non vos modifications."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:458
+msgid "If you are able to patch the bug or add the feature yourself - fantastic, make a pull request with the code!"
+msgstr "Si vous êtes capable de corriger le bogue ou d'ajouter la fonctionnalité vous-même - fantastique, faites une pull request avec le code!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:457
+msgid "Pull Request (PR)"
+msgstr "Pull Request (PR)"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:454
+msgid "Paste error output or logs in your issue or in a Gist. If pasting them in the issue, wrap it in three backticks: ``` so that it renders nicely."
+msgstr "Collez la sortie d'erreur ou les journaux dans votre problème ou dans un fichier Gist. Si vous les collez dans le numéro, enveloppez-le dans trois backticks: ```  pour qu'il rende bien."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:453
+msgid "Take your time to post as much information about your issue and server environment if it is possible."
+msgstr "Prenez votre temps pour publier autant d'informations sur votre problème et sur l'environnement du serveur si cela est possible."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:452
+msgid "Make sure the title of your issue report explains shortly what is going on."
+msgstr "Assurez-vous que le titre de votre rapport de problème explique brièvement ce qui se passe."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:451
+msgid "Be clear about what your problem is: what was the expected outcome, what happened instead? Detail how someone else can recreate the problem."
+msgstr "Soyez clair sur votre problème: quel était le résultat attendu, que s'est-il passé à la place? Détaillez comment quelqu'un d'autre peut recréer le problème."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:450
+msgid "Check existing issues for your issue. Duplicating an issue is slower for both parties so search through open and closed issues to see if what you are running into has been addressed already."
+msgstr "Vérifiez les problèmes existants pour votre problème. La duplication d'un problème est plus lente pour les deux parties.Par conséquent, recherchez parmi les problèmes ouverts et fermés pour voir si ce que vous rencontrez a déjà été résolu."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:448
+msgid "Issues Pro Tips"
+msgstr "Problèmes Conseils de pro"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:446
+msgid "If you find a bug in a Hypermarket theme functionality (and you do not know how to fix it), have trouble following the documentation or have a question about the Hypermarket theme hooks (filters and actions) - create an issue! There is nothing to it and whatever issue you are having, you are likely not the only one, so others will find your issue helpful, too."
+msgstr "Si vous trouvez un bogue dans une fonctionnalité de thème Hypermarket (et que vous ne savez pas comment le résoudre), si vous avez du mal à suivre la documentation ou si vous avez une question sur les hooks du thème Hypermarket (filtres et actions) - créez un problème! Il n'y a rien et quel que soit le problème que vous rencontrez, vous n'êtes probablement pas le seul, alors d'autres trouveront votre problème utile également."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:445
+msgid "Create an Issue"
+msgstr "Créer un problème"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:442
+msgid "Now that you have found the Hypermarket theme useful, here is how you can take action."
+msgstr "Maintenant que vous avez trouvé le thème Hypermarket utile, voici comment vous pouvez agir."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:440
+msgid "Contribute to Hypermarket"
+msgstr "Contribuer à l'Hypermarket"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:436
+#: includes/classes/class-hypermarket-welcome-screen.php:443
+msgid "GitHub Development Repository"
+msgstr "Répertoire de développement GitHub"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:435
+msgid "For translations of our Hypermarket theme just push the files to the main repository for all Hypermarket code, and we will include the translation files within your name and credit to the next release, so other people who speak your language can use it."
+msgstr "Pour les traductions de notre thème Hypermarket, il suffit de pousser les fichiers vers le référentiel principal pour tout le code Hypermarket, et nous inclurons les fichiers de traduction dans votre nom et créditons à la prochaine version, afin que d'autres personnes qui parlent votre langue puissent l'utiliser."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:434
+msgid "In case you have already translated Hypermarket theme a lot of users would be thrilled if you share your translation files with the community."
+msgstr "Si vous avez déjà traduit le thème Hypermarket, de nombreux utilisateurs seraient ravis si vous partagez vos fichiers de traduction avec la communauté."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:433
+msgid "Share your Language Files"
+msgstr "Partagez vos fichiers de langue"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:431
+msgid "Hypermarket WPML Certification Badge"
+msgstr "Badge de certification Hypermarket WPML"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:430
+msgid "Hypermarket theme is fully compatible and tested with most popular WordPress plugin that supports the creation of multilingual layouts. Translate your website into any language with WPML!"
+msgstr "Le thème Hypermarket est entièrement compatible et testé avec le plugin WordPress le plus populaire qui prend en charge la création de mises en page multilingues. Traduisez votre site Web dans n'importe quelle langue avec WPML!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:429
+msgid "WPML & Translation Ready"
+msgstr "WPML et prêt pour la traduction"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:427
+msgid "How to translate Hypermarket theme with Poedit?"
+msgstr "Comment traduire le thème Hypermarket avec Poedit?"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:426
+msgid "MO files just compiled exports from the PO files and used by WordPress to get the conversion of each string to translate the theme. If you try to open a MO file with a regular text editor, you will not understand anything of its content."
+msgstr "Les fichiers MO compilent simplement les exportations à partir des fichiers PO et sont utilisés par WordPress pour obtenir la conversion de chaque chaîne afin de traduire le thème. Si vous essayez d'ouvrir un fichier MO avec un éditeur de texte classique, vous ne comprendrez rien de son contenu."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:425
+msgid "PO files are human-readable; Those files contains a list of strings ready to be translated or with a translation already included."
+msgstr "Les fichiers PO sont lisibles par l'homme; Ces fichiers contiennent une liste de chaînes prêtes à être traduites ou avec une traduction déjà incluse."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:424
+msgid "WordPress uses PO and MO files to manage translations. In fact, WordPress only needs MO files to handle translations."
+msgstr "WordPress utilise des fichiers PO et MO pour gérer les traductions. En fait, WordPress n'a besoin que de fichiers MO pour gérer les traductions."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:423
+msgid "What are PO and MO translation files?"
+msgstr "Que sont les fichiers de traduction PO et MO?"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:421
+msgid "If you need more advanced features such as translating menu items, categories, etc. Feel free to visit WPML website and find out more about their premium services and plugin."
+msgstr "Si vous avez besoin de fonctionnalités plus avancées telles que la traduction d'éléments de menu, de catégories, etc. N'hésitez pas à visiter le site Web de WPML et en savoir plus sur leurs services premium et leur plugin."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:420
+msgid "Hypermarket WordPress theme is translation-ready and localized using the GNU framework. It is the common way to translate WordPress core and almost any theme or plugin."
+msgstr "Le thème WordPress Hypermarket est prêt pour la traduction et localisé à l'aide du framework GNU. C'est le moyen courant de traduire le cœur de WordPress et presque tous les thèmes ou plugins."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:418
+msgid "Translate Hypermarket theme into any language"
+msgstr "Traduire le thème de l'Hypermarket dans n'importe quelle langue"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:414
+msgid "Theme Documentation"
+msgstr "Documentation du thème"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:413
+msgid "Before you get started, please be sure always to check out theme documentation files. We outline all kinds of useful information and provide you with all the details you need know to use Hypermarket Theme."
+msgstr "Avant de commencer, assurez-vous de toujours consulter les fichiers de documentation du thème. Nous décrivons toutes sortes d'informations utiles et vous fournissons tous les détails dont vous avez besoin pour utiliser Thème Hypermarket."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:412
+msgid "View full documentation"
+msgstr "Voir la documentation complète"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:410
+msgid "We look forward to listening to you and continuing our development of the Hypermarket theme."
+msgstr "Nous nous réjouissons de vous écouter et de poursuivre notre développement sur le thème Hypermarket."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:407
+msgid "MyPreview Support Forum"
+msgstr "Forum d'assistance MyPreview"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:404
+msgid "To post your issues in the forum, please navigate to:"
+msgstr "Pour publier vos problèmes sur le forum, accédez à:"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:403
+msgid "To keep doing this well, we kindly request that you post discussions and feedback(s) in our dedicated forum whenever possible, rather than in the WordPress community forum. Doing so will allow us to leverage support team and tools to answer your questions as quickly as possible. "
+msgstr "Pour continuer à bien faire, nous vous demandons de bien vouloir publier des discussions et des commentaires dans notre forum dédié chaque fois que possible, plutôt que sur le forum de la communauté WordPress. Cela nous permettra de tirer parti de l'équipe d'assistance et des outils pour répondre à vos questions le plus rapidement possible. "
+
+#: includes/classes/class-hypermarket-welcome-screen.php:402
+msgid "Thanks so much for downloading and using the Hypermarket theme and providing positive feedback(s). The WordPress community has helped us a lot to improve the Hypermarket theme and make it compatible with more plugins and third-parties."
+msgstr "Merci beaucoup d'avoir téléchargé et utilisé le thème Hypermarket et d'avoir fourni des commentaires positifs. La communauté WordPress nous a beaucoup aidés à améliorer le thème Hypermarket et à le rendre compatible avec plus de plugins et de tiers."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:400
+msgid "Support and Documentation"
+msgstr "Assistance et documentation"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:109
+msgid "Hypermarket theme is fully compatible with the WooCommerce plugin for WordPress. It includes full design integration of the WooCommerce pages, shortcodes, and widgets."
+msgstr "Le thème Hypermarché est entièrement compatible avec le plugin WooCommerce pour WordPress. Il comprend une intégration complète de la conception des pages, des codes courts et des widgets WooCommerce."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:107
+msgid "WooCommerce - A powerful, extendable eCommerce plugin that helps you sell anything"
+msgstr "WooCommerce - Un plugin de commerce électronique puissant et extensible qui vous aide à vendre n'importe quoi"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:101
+msgid "Recommended & Integrated Plugins"
+msgstr "Recommandé et plugins intégrés"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:99
+msgid "You are on your way to super-productivity and beyond!"
+msgstr "Vous êtes sur le chemin de la super-productivité et au-delà!"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:98
+msgid "Thanks so much for joining us and using our excellent Hypermarket theme."
+msgstr "Merci beaucoup de vous joindre à nous et d’utiliser notre excellent thème hypermarché."
+
+#: includes/classes/class-hypermarket-welcome-screen.php:96
+msgid "This is where it all begins"
+msgstr "C’est là que tout commence"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:93
+#: includes/classes/class-hypermarket-welcome-screen.php:481
+msgid "Click to toggle"
+msgstr "Clique pour basculer"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:85
+msgid "Contribute"
+msgstr "Contribuer"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:84
+msgid "Translate"
+msgstr "Traduire"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:83
+msgid "Support"
+msgstr "Soutien"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:78
+msgid "Welcome"
+msgstr "Bienvenu"
+
+#: includes/classes/class-hypermarket-welcome-screen.php:59
+#: includes/classes/class-hypermarket-welcome-screen.php:76
+msgid "Welcome to Hypermarket Theme"
+msgstr "Bienvenue sur le thème de l'Hypermarché"
+
+#: includes/classes/class-customizer.php:80
+msgid "Display Site Tagline"
+msgstr "Afficher le slogan du site"
+
+#: includes/classes/class-customizer.php:53
+#: includes/classes/class-customizer.php:68
+msgid "Works on small screen devices only!"
+msgstr "Fonctionne uniquement sur les appareils à petit écran!"
+
+#: includes/classes/class-customizer.php:67
+msgid "Site Title"
+msgstr "Titre du site"
+
+#: includes/classes/class-bootstrap-navwalker.php:163
+msgid "Add a menu"
+msgstr "Ajouter un menu"
+
+#: includes/back-compat.php:42 includes/back-compat.php:55
+#: includes/back-compat.php:71
+msgid "Hypermarket requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "L'hypermarché nécessite au moins la version 4.7 de WordPress. Vous exécutez la version%s. Veuillez mettre à jour et réessayer."
+
+#: comments.php:118
+msgid "Leave Comment"
+msgstr "Laisse un commentaire"
+
+#: comments.php:110
+msgid "Be the first to comment &ldquo;%s&rdquo;"
+msgstr "Soyez le premier à commenter &ldquo;%s&rdquo;"
+
+#: comments.php:109
+msgid "Comment*"
+msgstr "Commentaire*"
+
+#: includes/classes/class-woocommerce.php:199
+msgid "Comment"
+msgstr "Commentaire"
+
+#: comments.php:104
+msgid "Website"
+msgstr "Site web"
+
+#: includes/classes/class-woocommerce.php:186 comments.php:102
+msgid "Email*"
+msgstr "Courriel*"
+
+#: includes/classes/class-woocommerce.php:186 comments.php:102
+msgid "Email"
+msgstr "Courriel"
+
+#: includes/classes/class-woocommerce.php:184 comments.php:100
+msgid "Name*"
+msgstr "Nom*"
+
+#: includes/classes/class-woocommerce.php:184 comments.php:100
+msgid "Name"
+msgstr "Nom"
+
+#: comments.php:92
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:58 comments.php:80
+msgid "Newer Comments &rarr;"
+msgstr "Commentaires récents  &rarr;"
+
+#: comments.php:54 comments.php:76
+msgid "&larr; Older Comments"
+msgstr "&larr; Anciens commentaires"
+
+#: comments.php:52 comments.php:74
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s commentaire sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Une réflexion sur &ldquo;%s&rdquo;"
+
+#. translators: %1$s: smiley
+#: 404.php:48
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Essayez de regarder dans les archives mensuelles. %1$s"
+
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"
+
+#: 404.php:16
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Il semble que rien n'ait été trouvé à cet endroit. Essayez peut-être l'un des liens ci-dessous ou une recherche?"
+
+#: 404.php:13
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Désolé! La page demandée n'existe plus..."
+
+#. Author of the theme
+msgid "MyPreview"
+msgstr "MyPreview"
+
+#. Theme URI of the theme
+msgid "https://www.mypreview.one/hypermarket-plus.html"
+msgstr "https://www.mypreview.one/hypermarket-plus.html"
+
+#. Author URI of the theme
+msgid "https://www.mypreview.one"
+msgstr "https://www.mypreview.one"

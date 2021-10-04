@@ -1,0 +1,22 @@
+/*
+ Theme Name: elliot
+ Author: Elliot Gaulin
+ Text Domain: elliot
+ Version: sheesh1
+ Template: hypermarket
+ */
+
+@import url("../hypermarket/style.css");
+
+.projet-scolaire{
+    line-height: 50px;
+}
+/* Cacher les forms et bouton à l'impression */
+@media print{
+    form{
+        display: none;
+    }
+    button, .btn, .scroll-to-top-btn{
+        display: none;
+    }
+}
