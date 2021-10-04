@@ -213,3 +213,57 @@
 [04-Oct-2021 20:09:30 UTC] PHP  13. preg_replace_callback() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
 [04-Oct-2021 20:09:30 UTC] PHP  14. do_shortcode_tag() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
 [04-Oct-2021 20:09:30 UTC] PHP  15. elliot_afficher_tableau_jaime() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:356
+[04-Oct-2021 20:25:43 UTC] PHP Notice:  A non well formed numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 457
+[04-Oct-2021 20:25:43 UTC] PHP Stack trace:
+[04-Oct-2021 20:25:43 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[04-Oct-2021 20:25:43 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[04-Oct-2021 20:25:43 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[04-Oct-2021 20:25:43 UTC] PHP   5. get_template_part() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\page.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:204
+[04-Oct-2021 20:25:43 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[04-Oct-2021 20:25:43 UTC] PHP   8. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:772
+[04-Oct-2021 20:25:43 UTC] PHP   9. the_content() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\loop-templates\content-page.php:34
+[04-Oct-2021 20:25:43 UTC] PHP  10. apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\post-template.php:253
+[04-Oct-2021 20:25:43 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:189
+[04-Oct-2021 20:25:43 UTC] PHP  12. do_shortcode() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Oct-2021 20:25:43 UTC] PHP  13. preg_replace_callback() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  14. do_shortcode_tag() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  15. elliot_afficher_tableau_jaime() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:356
+[04-Oct-2021 20:25:43 UTC] PHP  16. date() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:457
+[04-Oct-2021 20:25:43 UTC] PHP Notice:  A non well formed numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 457
+[04-Oct-2021 20:25:43 UTC] PHP Stack trace:
+[04-Oct-2021 20:25:43 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[04-Oct-2021 20:25:43 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[04-Oct-2021 20:25:43 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[04-Oct-2021 20:25:43 UTC] PHP   5. get_template_part() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\page.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:204
+[04-Oct-2021 20:25:43 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[04-Oct-2021 20:25:43 UTC] PHP   8. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:772
+[04-Oct-2021 20:25:43 UTC] PHP   9. the_content() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\loop-templates\content-page.php:34
+[04-Oct-2021 20:25:43 UTC] PHP  10. apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\post-template.php:253
+[04-Oct-2021 20:25:43 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:189
+[04-Oct-2021 20:25:43 UTC] PHP  12. do_shortcode() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Oct-2021 20:25:43 UTC] PHP  13. preg_replace_callback() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  14. do_shortcode_tag() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  15. elliot_afficher_tableau_jaime() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:356
+[04-Oct-2021 20:25:43 UTC] PHP  16. date() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:457
+[04-Oct-2021 20:25:43 UTC] PHP Notice:  A non well formed numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 457
+[04-Oct-2021 20:25:43 UTC] PHP Stack trace:
+[04-Oct-2021 20:25:43 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[04-Oct-2021 20:25:43 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[04-Oct-2021 20:25:43 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[04-Oct-2021 20:25:43 UTC] PHP   5. get_template_part() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\page.php:19
+[04-Oct-2021 20:25:43 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:204
+[04-Oct-2021 20:25:43 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[04-Oct-2021 20:25:43 UTC] PHP   8. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:772
+[04-Oct-2021 20:25:43 UTC] PHP   9. the_content() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\loop-templates\content-page.php:34
+[04-Oct-2021 20:25:43 UTC] PHP  10. apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\post-template.php:253
+[04-Oct-2021 20:25:43 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:189
+[04-Oct-2021 20:25:43 UTC] PHP  12. do_shortcode() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Oct-2021 20:25:43 UTC] PHP  13. preg_replace_callback() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  14. do_shortcode_tag() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:228
+[04-Oct-2021 20:25:43 UTC] PHP  15. elliot_afficher_tableau_jaime() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\shortcodes.php:356
+[04-Oct-2021 20:25:43 UTC] PHP  16. date() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:457

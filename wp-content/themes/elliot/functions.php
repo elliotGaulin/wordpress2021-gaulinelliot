@@ -454,7 +454,7 @@ function elliot_afficher_tableau_jaime() {
 				$code_html .= "
 					<tr>
 						<td>$enreg->user_nicename</td>
-						<td>$enreg->date</td>
+						<td>" . date("Y-m-d", strtotime($enreg->date)) . "</td>
 					</tr>
 				";
 			}
