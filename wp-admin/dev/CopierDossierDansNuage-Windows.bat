@@ -68,7 +68,7 @@ echo ***********************************************
 ˜
 @echo on
 CD %cheminMySQLBin%
-mysqldump -u %usagerMySQL% -p --default-character-set=utf8 --routines --comments --triggers %nomBD% > %cheminCible%\%dossierCible%-%mydate%\%nomBD%-%mydate%.sql
+mysqldump -u %usagerMySQL% -p --default-character-set=utf8 --routines --comments --triggers %nomBD% > %cheminCible%\%dossierCible%-%mydate%\wp-admin\dev\%nomBD%-%mydate%.sql
 @echo off
 echo *******************
 echo ***** Termin‚ *****

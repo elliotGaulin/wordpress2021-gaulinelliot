@@ -110,8 +110,6 @@ function elliot_echo_debug( $message ) {
  */
 function elliot_ajuster_head( $content ) {
 	return '<link rel="icon" href="' . get_site_url() . '/favicon.ico" />';
-
-	return '<link rel="apple-touch-icon" sizes="180x180" href="' . get_site_url() . '/apple-touch-icon.png">';
 }
 
 add_action( 'wp_head', 'elliot_ajuster_head' );
@@ -123,8 +121,8 @@ add_action( 'admin_head', 'elliot_ajuster_head' );
 function elliot_afficher_liste_items() {
 	global $wpdb;
 	$code_html = "";
-	$message_aucune_donnee = _e( 'Aucune donnée ne correspond aux critères demandés.', 'fr_CA' );
-	$message_erreur_sql = _e( 'Oups ! Un problème a été rencontré.', 'fr_CA' );
+	$message_aucune_donnee = __( 'Aucune donnée ne correspond aux critères demandés.', 'fr_CA' );
+	$message_erreur_sql = __( 'Oups ! Un problème a été rencontré.', 'fr_CA' );
 
 	$table_items     = $wpdb->prefix . "elliot_items";
 	$table_categorie = $wpdb->prefix . "elliot_categorie";
@@ -189,7 +187,6 @@ function elliot_charger_css_js_web() {
 	wp_enqueue_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' );
 	wp_enqueue_style( 'elliotafficherliste', get_stylesheet_directory_uri() . '/css/elliot-afficher-liste-items.css' );
 }
-
 add_action( 'wp_enqueue_scripts', 'elliot_charger_css_js_web' );
 
 
@@ -474,3 +471,437 @@ function elliot_afficher_tableau_jaime() {
 	return $code_html;
 }
 add_shortcode( 'elliotaffichertableaujaime', 'elliot_afficher_tableau_jaime' );
+
+function elliot_afficher_liste_items_menu() {
+	global $wpdb;
+	$code_html = "";
+	$message_aucune_donnee = __( 'Aucune donnée ne correspond aux critères demandés.', 'fr_CA' );
+	$message_erreur_sql = __( 'Oups ! Un problème a été rencontré.', 'fr_CA' );
+
+	$table_items     = $wpdb->prefix . "elliot_items";
+	$table_categorie = $wpdb->prefix . "elliot_categorie";
+
+	$requete = "
+		SELECT titre, description, location_image 
+			FROM $table_items
+			ORDER BY titre";
+	$resultat = $wpdb->get_results( $requete );
+	$erreur_sql = $wpdb->last_error;
+
+	if ( $erreur_sql == "" ) {
+		if ( $wpdb->num_rows > 0 ) {
+			$code_html = "";
+			$code_html .= "
+                <table class='table'>
+                    <thead>
+                        <tr>
+                            <th>" . __('Titre', 'elliot') . "</th>
+                            <th>" . __('Description', 'elliot') . "</th>
+                            <th>" . __('Image', 'elliot') . "</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            ";
+
+			foreach ( $resultat as $enreg ) {
+				$code_html .= "
+					<tr>
+					    <th>$enreg->titre</th>
+                        <th>$enreg->description</th>
+                        <th><img src='$enreg->location_image' width='75' alt='$enreg->location_image'></th>
+					</tr>
+				";
+			}
+			$code_html .= '</tbody></table>';
+		} else {
+			$code_html .= '<div class="messageavertissement">';
+			$code_html .= $message_aucune_donnee;
+			$code_html .= '</div>';
+		}
+	} else {
+		$code_html .= '<div class="messageerreur">';
+		$code_html .= $message_erreur_sql;
+		$code_html .= '</div>';
+		// écrit l'erreur dans le journal seulement si on est en mode débogage
+		elliot_log_debug( $erreur_sql );
+	}
+	return $code_html;
+}
+
+function elliot_liste_item_tableau_bord(){
+	global $title;   // titre de la page du menu, tel qu'initialisé dans la fonction de rappel de add_menu_page
+
+    echo "
+	<div class='wrap'>
+	    <div class='mb-4'>
+            <h1 class='wp-heading-inline'>$title</h1>
+        </div>
+	";
+    echo "<p><a href='" . get_admin_url() ."admin.php?page=elliot_ajout' class='page-title-action'>Ajouter un item</a></p>";
+	echo elliot_afficher_liste_items_menu();
+	echo "
+		<hr class='wp-header-end'>
+	</div>
+	";
+}
+
+function elliot_ajouter_menu_tableau_bord(){
+	add_menu_page(
+		__("Elliot - Gestion", "elliot"),
+		__("Elliot - Gestion", "elliot"),
+		"manage_options",
+		"elliot_gestion",
+		"elliot_liste_item_tableau_bord",
+	);
+    add_submenu_page(
+        "elliot_gestion",
+	    __("Elliot - Gestion", "elliot"),
+        __("Gestion", "elliot"),
+        "manage_options",
+        "elliot_gestion",
+        "elliot_liste_item_tableau_bord"
+    );
+	// seconde option du sous-menu
+	add_submenu_page(
+		"elliot_gestion",   // slug du menu parent
+		__( "Elliot - Ajouter un item", "elliot" ),  // texte de la balise <title>, initialisera $title
+		__( "Ajouter un item", "elliot" ),   // titre de l'option de sous-menu
+		"manage_options",  // droits requis pour voir l'option de menu
+		"elliot_ajout", // slug
+		"elliot_creer_page_ajout"  // fonction de rappel pour créer la page
+	);
+}
+
+add_action( "admin_menu", "elliot_ajouter_menu_tableau_bord" );
+
+function elliot_afficher_formulaire_contact() {
+    $code_html = "
+        <form method='post' action='". get_stylesheet_directory_uri(). "/envoyer-courriel-contact.php'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='prenom'>" . __('Prénom', 'elliot'). "</label>
+                        <input type='text' class='form-control' id='prenom' name='prenom' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='nom'>" . __('Nom', 'elliot') . "</label>
+                        <input type='text' class='form-control' id='nom' name='nom' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='email'>" . __('Adresse email', 'elliot') . "</label>
+                        <input type='email' class='form-control' id='email' name='email' required>
+                    </div>
+                </div>
+                <!-- col-md-6 -->
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='sujet'>" . __('Sujet', 'elliot') . "</label>
+                        <input type='text' class='form-control' id='sujet' name='sujet' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <label for='message'>" . __('Message', 'elliot') . "</label>
+                    <textarea class='form-control' id='message' rows='4' name='message' required></textarea>
+                </div>
+            </div>
+            <button type='submit' class='btn btn-dark'>" . __('Envoyer', 'elliot') . "</button>
+        </form>
+	<?php
+	";
+
+    return $code_html;
+}
+add_shortcode( 'elliotafficherformulairecontact', 'elliot_afficher_formulaire_contact' );
+
+/**
+ * Ajout des tables personalisée pour les likes dans le thème enfant Elliot
+ *
+ * Utilisation add_action( "after_switch_theme", "elliot_creer_table_like")
+ * @author Elliot Gaulin
+ */
+function elliot_creer_table_contact() {
+	global $wpdb;
+
+	$charset_collate = $wpdb->get_charset_collate();
+
+	$nom_table = $wpdb->prefix . 'elliot_contact';
+
+	$requete_sql = "CREATE TABLE $nom_table (
+		`id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+		`nom` VARCHAR(255) NOT NULL,
+		`prenom` VARCHAR(255) NOT NULL,
+		`email` VARCHAR(255) NOT NULL,
+		`sujet` VARCHAR(255) NOT NULL,
+		`message` TEXT NOT NULL,
+		`ip` VARCHAR(15) NOT NULL,
+		`date` datetime NOT NULL,
+		PRIMARY KEY (`id`)
+		)$charset_collate;";
+
+
+	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	dbDelta( $requete_sql );
+}
+
+add_action( "after_switch_theme", "elliot_creer_table_contact" );
+
+
+
+/**
+ * Active les variables de session.
+ *
+ * Utilisation : add_action( 'init', 'elliot_session_start', 1 );
+ *
+ * @author Elliot Gaulin
+ *
+ */
+
+function elliot_session_start() {
+	if ( ! session_id() ) {
+		@session_start();
+	}
+}
+
+add_action( 'init', 'elliot_session_start', 1 );
+
+/**
+ * Configurer l'envoi de courriel par SMTP.
+ *
+ * Utilisation : add_action( 'phpmailer_init', 'monprefixe_configurer_courriel' );
+ * L'envoi de courriel ser fera comme suit :
+ * wp_mail( "destinataire@sondomaine.com", "Sujet", "Message" );
+ *
+ * @author Christiane Lagacé
+ *
+ */
+function elliot_configurer_courriel( $phpmailer ) {
+	$phpmailer->isSMTP();
+	$phpmailer->Host = SMTP_HOST;
+	$phpmailer->SMTPAuth = SMTP_AUTH;
+	$phpmailer->Port = SMTP_PORT;
+	$phpmailer->SMTPSecure = SMTP_SECURE;
+	$phpmailer->Username = SMTP_USERNAME;
+	$phpmailer->Password = SMTP_PASSWORD;
+	$phpmailer->From = SMTP_FROM;
+	$phpmailer->FromName = SMTP_FROMNAME;
+}
+
+add_action( 'phpmailer_init', 'elliot_configurer_courriel' );
+
+/**
+ * Logue les erreurs en cas de problème si WP_DEBUG est à true.
+ *
+ * Utilisation : add_action('wp_mail_failed', 'monprefixe_erreur_courriel', 10, 1);
+ * Ceci appellera automatiquement cette fonction en cas d'erreur après avoir fait
+ * wp_mail( "destinataire@sondomaine.com", "Sujet", "Message" );
+ *
+ * @author Christiane Lagacé
+ *
+ */
+function elliot_erreur_courriel( $wp_error ) {
+	elliot_log_debug( $wp_error );
+}
+
+add_action( 'wp_mail_failed', 'elliot_erreur_courriel', 10, 1 );
+
+/**
+ *
+ * Affiche le résultat du traitement du formulaire de contact.
+ *
+ * @author Elliot Gaulin
+ */
+function elliot_afficher_resultat_formulaire_contact(){
+    $code_html = "";
+    if ( isset( $_SESSION['SuccesFormulaireContact'] ) ){
+        //Si le formulaire à fonctionner : vert
+        if ( $_SESSION['SuccesFormulaireContact'] ){
+	        echo "<div class='alert alert-success' role='alert'>";
+        //Sinon danger pour rouge
+        } else {
+	        echo "<div class='alert alert-danger' role='alert'>";
+        }
+
+        if ( isset( $_SESSION['MessageFormulaireContact'] ) ) {
+            echo $_SESSION['MessageFormulaireContact'];
+            unset($_SESSION['MessageFormulaireContact']);
+        } else {
+            echo "Veuillez vous fier à la couleur de cette alerte pour savoir si le contact à fonctionner";
+        }
+        echo "</div>";
+
+        unset($_SESSION['SuccesFormulaireContact']);
+    }
+    return $code_html;
+}
+add_action( 'hypermarket_before_header_area', 'elliot_afficher_resultat_formulaire_contact' );
+
+function elliot_creer_page_ajout(){
+    global $title;   // titre de la page du menu, tel qu'initialisé dans la fonction de rappel de add_menu_page
+    ?>
+    <div class="wrap">
+        <h1 class="wp-heading-inline"><?php echo $title; ?></h1>
+        <?php
+        echo elliot_afficher_formulaire_ajout_item();
+        ?>
+        <hr class="wp-header-end">
+    </div>
+    <?php
+}
+
+function elliot_afficher_formulaire_ajout_item(){
+	global $wpdb;
+
+    $code_html_select = "";
+
+	$table_categorie = $wpdb->prefix . "elliot_categorie";
+	$requete = "
+		SELECT titre, id
+			FROM $table_categorie
+			ORDER BY titre";
+	$resultat = $wpdb->get_results( $requete );
+	$erreur_sql = $wpdb->last_error;
+	if ( $erreur_sql == "" ) {
+		if ( $wpdb->num_rows > 0 ) {
+			$code_html_select .= "<select class='form-control' name='categorie' required>";
+
+			foreach ( $resultat as $enreg ) {
+				$code_html_select .= "
+					<option value='$enreg->id'>$enreg->titre</option>
+				";
+			}
+			$code_html_select .= '</select>';
+		} else {
+			$code_html_select .= '<div class="alert alert-danger">';
+			$code_html_select .= __("Aucune catégorie n'a été trouvée", "elliot");
+			$code_html_select .= '</div>';
+		}
+	} else {
+		$code_html_select .= '<div class="alert alert_danger">';
+		$code_html_select .= __("Erreur de connexion au système");
+		$code_html_select .= '</div>';
+		// écrit l'erreur dans le journal seulement si on est en mode débogage
+		elliot_log_debug( $erreur_sql );
+	}
+
+	$nonce = wp_nonce_field( 'ajouter_item', 'nonce_ajouter_item', true, false);
+
+	$code_html = "
+        <form method='post' action='". get_stylesheet_directory_uri(). "/ajouter-item.php'>
+            $nonce
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='titre'>" . __('Titre', 'elliot'). "</label>
+                        <input type='text' class='form-control' id='titre' name='titre' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='url'>" . __('Adresse url', 'elliot') . "</label>
+                        <input type='text' class='form-control' id='url' name='url' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <div class='row mb-3'>
+                <div class='col-md-12'>
+                    <label for='description'>" . __('Description', 'elliot') . "</label>
+                    <textarea class='form-control' id='description' rows='4' name='description' required></textarea>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <div class='form-group'>
+                    " . $code_html_select ."
+                    </div>
+                </div>
+            </div>
+            <button type='submit' class='page-title-action'>" . __('Envoyer', 'elliot') . "</button>
+        </form>
+	";
+
+	return $code_html;
+}
+/**
+ * Charge les scripts et feuilles de style propres au thème.
+ *
+ * Utilisation : add_action('wp_enqueue_scripts', 'monprefixe_charger_css_js_web');
+ *
+ * @author Annie Gagnon
+ *
+ */
+function elliot_charger_css_js_web_admin() {
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array( 'jquery' ), null, true );
+	wp_enqueue_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js', array( 'jquery' ), null, true );
+	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array( 'jquery' ), null, true );
+	wp_enqueue_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' );
+}
+add_action( 'admin_enqueue_scripts', 'elliot_charger_css_js_web_admin' );
+
+function elliot_verifier_categorie($categorie_id){
+    global $wpdb;
+    $categorie_valide = false;
+	$table_categorie = $wpdb->prefix . "elliot_categorie";
+	$requete = "
+		SELECT id
+			FROM $table_categorie
+			WHERE id = $categorie_id";
+
+	$wpdb->get_results( $requete );
+	$erreur_sql = $wpdb->last_error;
+	if ( $erreur_sql == "" ) {
+		if ( $wpdb->num_rows > 0 ) {
+            $categorie_valide = true;
+		} else {
+			$categorie_valide = false;
+		}
+	} else {
+		// écrit l'erreur dans le journal seulement si on est en mode débogage
+		elliot_log_debug( $erreur_sql );
+	}
+
+    return $categorie_valide;
+}
+
+/**
+ *
+ * Affiche le résultat du traitement du formulaire de contact.
+ *
+ * @author Elliot Gaulin
+ */
+function elliot_afficher_resultat_formulaire_ajout_item(){
+	$code_html = "";
+	if ( isset( $_SESSION['SuccesFormulaireAjoutItem'] ) ){
+		//Si le formulaire à fonctionner : vert
+		if ( $_SESSION['SuccesFormulaireAjoutItem'] ){
+			echo "<div class='notice notice-success is-dismissible' role='alert'>";
+			//Sinon danger pour rouge
+		} else {
+			echo "<div class='notice notice-warning is-dismissible' role='alert'>";
+		}
+
+		if ( isset( $_SESSION['MessageFormulaireAjoutItem'] ) ) {
+			echo $_SESSION['MessageFormulaireAjoutItem'];
+			unset($_SESSION['MessageFormulaireAjoutItem']);
+		} else {
+			echo "Veuillez vous fier à la couleur de cette alerte pour savoir si le contact à fonctionner";
+		}
+		echo "</div>";
+
+		unset($_SESSION['SuccesFormulaireAjoutItem']);
+	}
+	return $code_html;
+}
+add_action( 'admin_notices', 'elliot_afficher_resultat_formulaire_ajout_item' );

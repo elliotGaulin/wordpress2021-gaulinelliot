@@ -104,3 +104,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+const SMTP_HOST = 'mail.elliotgaulin.ca';
+const SMTP_AUTH = true;
+const SMTP_PORT     = '587';  // ou 465
+const SMTP_SECURE   = 'tls';   // ou ssl
+const SMTP_USERNAME = 'wordpress@elliotgaulin.ca';
+const SMTP_PASSWORD = 'apical1234567';
+const SMTP_FROM = 'wordpress@elliotgaulin.ca';
+const SMTP_FROMNAME = 'Mon site Web';
