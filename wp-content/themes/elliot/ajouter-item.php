@@ -8,6 +8,10 @@ $_SESSION['SuccesFormulaireAjoutItem'] = true;
 
 if ( $_POST['titre'] ){
 	$titre = $_POST['titre'];
+	if ( strlen($titre) > 255 ) {
+		$_SESSION['SuccesFormulaireAjoutItem'] = false;
+		$_SESSION['MessageFormulaireAjoutItem'] = __("Le titre peut être d'un maximum de 255 charactères.", "elliot");
+	}
 } else {
 	$_SESSION['SuccesFormulaireAjoutItem'] = false;
 	$_SESSION['MessageFormulaireAjoutItem'] = __("Veuillez entrer un titre.", "elliot");
@@ -17,6 +21,10 @@ if ( isset( $_POST['url'] ) ){
 	if ( ! filter_var($url, FILTER_VALIDATE_URL) ){
 		$_SESSION['SuccesFormulaireAjoutItem'] = false;
 		$_SESSION['MessageFormulaireAjoutItem'] = __("L'adresse url est invalide", "elliot");
+	}
+	if ( strlen($titre) > 255 ) {
+		$_SESSION['SuccesFormulaireAjoutItem']  = false;
+		$_SESSION['MessageFormulaireAjoutItem'] = __( "L'url peut être d'un maximum de 255 charactères.", "elliot" );
 	}
 } else {
 	$_SESSION['SuccesFormulaireAjoutItem'] = false;
@@ -47,7 +55,10 @@ if ( isset( $_POST['nonce_ajouter_item'] ) ){
 	$_SESSION['SuccesFormulaireAjoutItem'] = false;
 	$_SESSION['MessageFormulaireAjoutItem'] = __('Une erreur est survenue. Veuillez réessayer.');
 }
-
+$titre = htmlspecialchars( $titre );
+$url = htmlspecialchars( $url );
+$description = htmlspecialchars( $description );
+$categorie = htmlspecialchars( $categorie );
 
 $table_categorie = $wpdb->prefix . "elliot_items";
 

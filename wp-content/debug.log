@@ -39,3 +39,580 @@
 			FROM cegepvicto_elliot_categorie
 			WHERE id = %s faite par elliot_verifier_categorie
 [31-Oct-2021 13:31:49 UTC] Message de débogage: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 3
+[01-Nov-2021 20:04:10 UTC] PHP Notice:  Undefined index: g-recaptcha-response in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\envoyer-courriel-contact.php on line 43
+[01-Nov-2021 20:04:10 UTC] PHP Stack trace:
+[01-Nov-2021 20:04:10 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\envoyer-courriel-contact.php:0
+[01-Nov-2021 20:09:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheconet_directory_uri() in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:198
+Stack trace:
+#0 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(303): elliot_charger_css_js_web('')
+#1 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\script-loader.php(2083): do_action('wp_enqueue_scri...')
+#4 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(303): wp_enqueue_scripts('')
+#5 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php(470): WP_Hook->do_a in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 198
+[04-Nov-2021 18:47:56 UTC] PHP Notice:  wpdb::prepare est appelée de la mauvaise manière. La requête ne contient pas le bon nombre de substitutifs (0) pour le nombre d’arguments proposés (1). Veuillez lire <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Débugger dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 4.8.3.) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\functions.php on line 5663
+[04-Nov-2021 18:47:56 UTC] PHP Stack trace:
+[04-Nov-2021 18:47:56 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:47:56 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:47:56 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:47:56 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:47:56 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:47:56 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:47:56 UTC] PHP   7. wpdb->prepare() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:945
+[04-Nov-2021 18:47:56 UTC] PHP   8. _doing_it_wrong() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\wp-db.php:1399
+[04-Nov-2021 18:47:56 UTC] PHP   9. trigger_error() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\functions.php:5663
+[04-Nov-2021 18:47:56 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 3 pour la requête 
+		SELECT titre, description, location_image, categorie_id 
+			FROM cegepvicto_elliot_items
+			WHERE id = % faite par do_action('toplevel_page_elliot_gestion'), WP_Hook->do_action, WP_Hook->apply_filters, elliot_liste_item_tableau_bord, elliot_afficher_formulaire_edition
+[04-Nov-2021 18:47:56 UTC] PHP Notice:  Undefined property: stdClass::$location_image in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 999
+[04-Nov-2021 18:47:56 UTC] PHP Stack trace:
+[04-Nov-2021 18:47:56 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:47:56 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:47:56 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:47:56 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:47:56 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:47:56 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:47:56 UTC] PHP Notice:  Undefined property: stdClass::$description in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1007
+[04-Nov-2021 18:47:56 UTC] PHP Stack trace:
+[04-Nov-2021 18:47:56 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:47:56 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:47:56 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:47:56 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:47:56 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:47:56 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:47:56 UTC] PHP Notice:  Undefined property: stdClass::$location_image in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 999
+[04-Nov-2021 18:47:56 UTC] PHP Stack trace:
+[04-Nov-2021 18:47:56 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:47:56 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:47:56 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:47:56 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:47:56 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:47:56 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:47:56 UTC] PHP Notice:  Undefined property: stdClass::$description in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1007
+[04-Nov-2021 18:47:56 UTC] PHP Stack trace:
+[04-Nov-2021 18:47:56 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:47:56 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:47:56 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:47:56 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:47:56 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:47:56 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:48:21 UTC] PHP Notice:  Undefined property: stdClass::$location_image in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 999
+[04-Nov-2021 18:48:21 UTC] PHP Stack trace:
+[04-Nov-2021 18:48:21 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:48:21 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:48:21 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:48:21 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:48:21 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:48:21 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:48:21 UTC] PHP Notice:  Undefined property: stdClass::$description in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1007
+[04-Nov-2021 18:48:21 UTC] PHP Stack trace:
+[04-Nov-2021 18:48:21 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:48:21 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:48:21 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:48:21 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:48:21 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:48:21 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:48:21 UTC] PHP Notice:  Undefined property: stdClass::$location_image in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 999
+[04-Nov-2021 18:48:21 UTC] PHP Stack trace:
+[04-Nov-2021 18:48:21 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:48:21 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:48:21 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:48:21 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:48:21 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:48:21 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[04-Nov-2021 18:48:21 UTC] PHP Notice:  Undefined property: stdClass::$description in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1007
+[04-Nov-2021 18:48:21 UTC] PHP Stack trace:
+[04-Nov-2021 18:48:21 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[04-Nov-2021 18:48:21 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[04-Nov-2021 18:48:21 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[04-Nov-2021 18:48:21 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[04-Nov-2021 18:48:21 UTC] PHP   5. elliot_liste_item_tableau_bord() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[04-Nov-2021 18:48:21 UTC] PHP   6. elliot_afficher_formulaire_edition() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:555
+[07-Nov-2021 12:58:38 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 194
+[07-Nov-2021 12:58:38 UTC] PHP Stack trace:
+[07-Nov-2021 12:58:38 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[07-Nov-2021 12:58:38 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[07-Nov-2021 12:58:38 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[07-Nov-2021 12:58:38 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[07-Nov-2021 12:58:38 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\404.php:9
+[07-Nov-2021 12:58:38 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[07-Nov-2021 12:58:38 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[07-Nov-2021 12:58:38 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[07-Nov-2021 12:58:38 UTC] PHP   9. wp_head() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:22
+[07-Nov-2021 12:58:38 UTC] PHP  10. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:3015
+[07-Nov-2021 12:58:38 UTC] PHP  11. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[07-Nov-2021 12:58:38 UTC] PHP  12. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[07-Nov-2021 12:58:38 UTC] PHP  13. wp_enqueue_scripts() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[07-Nov-2021 12:58:38 UTC] PHP  14. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\script-loader.php:2083
+[07-Nov-2021 12:58:38 UTC] PHP  15. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[07-Nov-2021 12:58:38 UTC] PHP  16. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[07-Nov-2021 12:58:38 UTC] PHP  17. elliot_charger_css_js_web() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[07-Nov-2021 13:07:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::num_rows() in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:946
+Stack trace:
+#0 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php(555): elliot_afficher_formulaire_edition()
+#1 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(303): elliot_liste_item_tableau_bord('')
+#2 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#3 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#4 D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#5 {main}
+  thrown in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 946
+[07-Nov-2021 13:19:54 UTC] PHP Notice:  Undefined index: nonce_ajouter_item in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php on line 50
+[07-Nov-2021 13:19:54 UTC] PHP Stack trace:
+[07-Nov-2021 13:19:54 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php:0
+[07-Nov-2021 13:19:54 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php:59
+Stack trace:
+#0 {main}
+  thrown in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php on line 59
+[07-Nov-2021 13:20:55 UTC] PHP Notice:  Undefined index: nonce_modfier_item in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php on line 50
+[07-Nov-2021 13:20:55 UTC] PHP Stack trace:
+[07-Nov-2021 13:20:55 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php:0
+[07-Nov-2021 13:20:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function str() in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php:59
+Stack trace:
+#0 {main}
+  thrown in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\modifier-item.php on line 59
+[07-Nov-2021 13:25:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:25:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:25:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:25:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:25:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:25:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:27:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:27:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:27:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:27:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:27:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:27:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:29:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:29:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:29:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:29:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:29:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:29:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:31:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:31:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:31:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:31:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:31:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:31:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:33:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:33:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:33:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:33:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:33:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:33:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:35:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:35:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:35:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:35:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:35:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:35:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:37:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:37:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:37:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:37:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:37:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:37:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:39:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:39:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:39:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:39:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:39:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:39:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:41:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:41:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:41:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:41:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:41:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:41:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:43:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:43:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:43:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:43:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:43:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:43:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:45:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:45:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:45:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:45:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:45:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:45:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:47:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:47:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:47:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:47:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:47:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:47:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:49:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:49:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:49:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:49:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:49:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:49:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:51:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:51:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:51:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:51:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:51:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:51:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:53:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:53:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:53:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:53:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:53:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:53:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:55:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:55:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:55:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:55:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:55:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:55:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:57:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:57:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:57:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:57:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:57:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:57:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 13:59:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 13:59:13 UTC] PHP Stack trace:
+[07-Nov-2021 13:59:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 13:59:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 13:59:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 13:59:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:01:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:01:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:01:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:01:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:01:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:01:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:03:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:03:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:03:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:03:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:03:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:03:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:05:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:05:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:05:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:05:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:05:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:05:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:07:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:07:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:07:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:07:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:07:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:07:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:09:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:09:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:09:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:09:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:09:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:09:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:11:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:11:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:11:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:11:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:11:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:11:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:13:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:13:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:13:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:13:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:13:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:13:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:15:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:15:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:15:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:15:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:15:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:15:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:17:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:17:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:17:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:17:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:17:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:17:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:19:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:19:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:19:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:19:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:19:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:19:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:21:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:21:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:21:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:21:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:21:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:21:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:23:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:23:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:23:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:23:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:23:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:23:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:25:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:25:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:25:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:25:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:25:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:25:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:27:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:27:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:27:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:27:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:27:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:27:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:29:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:29:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:29:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:29:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:29:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:29:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:31:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:31:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:31:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:31:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:31:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:31:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:33:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:33:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:33:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:33:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:33:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:33:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:35:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:35:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:35:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:35:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:35:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:35:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:37:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:37:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:37:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:37:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:37:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:37:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:39:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:39:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:39:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:39:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:39:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:39:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:41:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:41:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:41:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:41:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:41:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:41:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:43:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:43:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:43:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:43:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:43:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:43:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:45:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:45:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:45:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:45:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:45:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:45:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:47:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:47:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:47:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:47:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:47:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:47:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:49:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:49:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:49:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:49:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:49:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:49:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:51:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:51:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:51:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:51:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:51:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:51:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:53:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:53:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:53:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:53:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:53:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:53:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:55:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:55:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:55:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:55:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:55:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:55:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:57:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:57:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:57:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:57:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:57:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:57:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 14:59:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 14:59:13 UTC] PHP Stack trace:
+[07-Nov-2021 14:59:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 14:59:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 14:59:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 14:59:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:01:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:01:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:01:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:01:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:01:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:01:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:03:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:03:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:03:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:03:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:03:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:03:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:05:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:05:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:05:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:05:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:05:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:05:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:07:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:07:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:07:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:07:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:07:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:07:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:09:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:09:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:09:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:09:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:09:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:09:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:11:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:11:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:11:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:11:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:11:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:11:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:13:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:13:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:13:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:13:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:13:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:13:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:15:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:15:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:15:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:15:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:15:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:15:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 15:17:13 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 15:17:13 UTC] PHP Stack trace:
+[07-Nov-2021 15:17:13 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 15:17:13 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 15:17:13 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 15:17:13 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[07-Nov-2021 17:54:24 UTC] PHP Fatal error:  Cannot redeclare elliot_afficher_resultat_formulaire_ajout_item() (previously declared in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:904) in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1073
+[07-Nov-2021 17:54:26 UTC] PHP Stack trace:
+[07-Nov-2021 17:54:26 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:0
+[07-Nov-2021 17:54:26 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-ajax.php:22
+[07-Nov-2021 17:54:26 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-load.php:50
+[07-Nov-2021 17:54:26 UTC] PHP   4. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-config.php:106
+[08-Nov-2021 19:55:01 UTC] PHP Warning:  A non-numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 749
+[08-Nov-2021 19:55:01 UTC] PHP Stack trace:
+[08-Nov-2021 19:55:01 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[08-Nov-2021 19:55:01 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[08-Nov-2021 19:55:01 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[08-Nov-2021 19:55:01 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[08-Nov-2021 19:55:01 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\index.php:16
+[08-Nov-2021 19:55:01 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[08-Nov-2021 19:55:01 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[08-Nov-2021 19:55:01 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[08-Nov-2021 19:55:01 UTC] PHP   9. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:33
+[08-Nov-2021 19:55:01 UTC] PHP  10. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[08-Nov-2021 19:55:01 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[08-Nov-2021 19:55:01 UTC] PHP  12. elliot_afficher_resultat_formulaire_contact() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[08-Nov-2021 19:55:01 UTC] PHP Warning:  A non-numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 749
+[08-Nov-2021 19:55:01 UTC] PHP Stack trace:
+[08-Nov-2021 19:55:01 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[08-Nov-2021 19:55:01 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[08-Nov-2021 19:55:01 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[08-Nov-2021 19:55:01 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[08-Nov-2021 19:55:01 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\index.php:16
+[08-Nov-2021 19:55:01 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[08-Nov-2021 19:55:01 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[08-Nov-2021 19:55:01 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[08-Nov-2021 19:55:01 UTC] PHP   9. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:33
+[08-Nov-2021 19:55:01 UTC] PHP  10. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[08-Nov-2021 19:55:01 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[08-Nov-2021 19:55:01 UTC] PHP  12. elliot_afficher_resultat_formulaire_contact() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[08-Nov-2021 19:55:01 UTC] PHP Warning:  A non-numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 756
+[08-Nov-2021 19:55:01 UTC] PHP Stack trace:
+[08-Nov-2021 19:55:01 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[08-Nov-2021 19:55:01 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[08-Nov-2021 19:55:01 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[08-Nov-2021 19:55:01 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[08-Nov-2021 19:55:01 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\index.php:16
+[08-Nov-2021 19:55:01 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[08-Nov-2021 19:55:01 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[08-Nov-2021 19:55:01 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[08-Nov-2021 19:55:01 UTC] PHP   9. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:33
+[08-Nov-2021 19:55:01 UTC] PHP  10. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[08-Nov-2021 19:55:01 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[08-Nov-2021 19:55:01 UTC] PHP  12. elliot_afficher_resultat_formulaire_contact() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[08-Nov-2021 19:55:01 UTC] PHP Warning:  A non-numeric value encountered in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 761
+[08-Nov-2021 19:55:01 UTC] PHP Stack trace:
+[08-Nov-2021 19:55:01 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[08-Nov-2021 19:55:01 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[08-Nov-2021 19:55:01 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[08-Nov-2021 19:55:01 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[08-Nov-2021 19:55:01 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\index.php:16
+[08-Nov-2021 19:55:01 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[08-Nov-2021 19:55:01 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[08-Nov-2021 19:55:01 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[08-Nov-2021 19:55:01 UTC] PHP   9. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:33
+[08-Nov-2021 19:55:01 UTC] PHP  10. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[08-Nov-2021 19:55:01 UTC] PHP  11. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[08-Nov-2021 19:55:01 UTC] PHP  12. elliot_afficher_resultat_formulaire_contact() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[08-Nov-2021 20:46:53 UTC] Erreur de la base de données WordPress Table 'wordpress2021_gaulinelliot.cegepvicto_elliot-items' doesn't exist pour la requête SHOW FULL COLUMNS FROM `cegepvicto_elliot-items`
+[08-Nov-2021 20:46:53 UTC] Message de débogage: Table 'wordpress2021_gaulinelliot.cegepvicto_elliot-items' doesn't exist
+[11-Nov-2021 19:10:59 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 194
+[11-Nov-2021 19:10:59 UTC] PHP Stack trace:
+[11-Nov-2021 19:10:59 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[11-Nov-2021 19:10:59 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[11-Nov-2021 19:10:59 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[11-Nov-2021 19:10:59 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[11-Nov-2021 19:10:59 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\404.php:9
+[11-Nov-2021 19:10:59 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[11-Nov-2021 19:10:59 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[11-Nov-2021 19:10:59 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[11-Nov-2021 19:10:59 UTC] PHP   9. wp_head() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:22
+[11-Nov-2021 19:10:59 UTC] PHP  10. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:3015
+[11-Nov-2021 19:10:59 UTC] PHP  11. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[11-Nov-2021 19:10:59 UTC] PHP  12. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[11-Nov-2021 19:10:59 UTC] PHP  13. wp_enqueue_scripts() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[11-Nov-2021 19:10:59 UTC] PHP  14. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\script-loader.php:2083
+[11-Nov-2021 19:10:59 UTC] PHP  15. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[11-Nov-2021 19:10:59 UTC] PHP  16. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[11-Nov-2021 19:10:59 UTC] PHP  17. elliot_charger_css_js_web() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[11-Nov-2021 19:11:02 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 194
+[11-Nov-2021 19:11:02 UTC] PHP Stack trace:
+[11-Nov-2021 19:11:02 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[11-Nov-2021 19:11:02 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[11-Nov-2021 19:11:02 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[11-Nov-2021 19:11:02 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[11-Nov-2021 19:11:02 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\404.php:9
+[11-Nov-2021 19:11:02 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[11-Nov-2021 19:11:02 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[11-Nov-2021 19:11:02 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[11-Nov-2021 19:11:02 UTC] PHP   9. wp_head() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:22
+[11-Nov-2021 19:11:02 UTC] PHP  10. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:3015
+[11-Nov-2021 19:11:02 UTC] PHP  11. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[11-Nov-2021 19:11:02 UTC] PHP  12. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[11-Nov-2021 19:11:02 UTC] PHP  13. wp_enqueue_scripts() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[11-Nov-2021 19:11:02 UTC] PHP  14. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\script-loader.php:2083
+[11-Nov-2021 19:11:02 UTC] PHP  15. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[11-Nov-2021 19:11:02 UTC] PHP  16. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[11-Nov-2021 19:11:02 UTC] PHP  17. elliot_charger_css_js_web() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
