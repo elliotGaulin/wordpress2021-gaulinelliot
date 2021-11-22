@@ -616,3 +616,492 @@ Stack trace:
 [11-Nov-2021 19:11:02 UTC] PHP  15. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
 [11-Nov-2021 19:11:02 UTC] PHP  16. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
 [11-Nov-2021 19:11:02 UTC] PHP  17. elliot_charger_css_js_web() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 13:32:21 UTC] Message de débogage: WP_Error Object
+(
+    [errors] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [0] => SMTP Error: Could not authenticate.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [to] => Array
+                        (
+                            [0] => admin@elliotgaulin.ca
+                        )
+
+                    [subject] => YTFSAD
+                    [message] => De : TEST TEST 
+Email : elliotgaulin@gmail.com
+    
+Message :
+KHGVKJHV
+
+                    [headers] => Array
+                        (
+                        )
+
+                    [attachments] => Array
+                        (
+                        )
+
+                    [phpmailer_exception_code] => 0
+                )
+
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+
+[22-Nov-2021 13:34:47 UTC] Message de débogage: WP_Error Object
+(
+    [errors] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [0] => SMTP Error: Could not authenticate.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [to] => Array
+                        (
+                            [0] => admin@elliotgaulin.ca
+                        )
+
+                    [subject] => asdasd
+                    [message] => De : ,JHSDBF jakhsdf 
+Email : elliotgaulin@gmail.com
+    
+Message :
+asdasd
+                    [headers] => Array
+                        (
+                        )
+
+                    [attachments] => Array
+                        (
+                        )
+
+                    [phpmailer_exception_code] => 0
+                )
+
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+
+[22-Nov-2021 13:35:23 UTC] Message de débogage: WP_Error Object
+(
+    [errors] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [0] => SMTP Error: Could not authenticate.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+            [wp_mail_failed] => Array
+                (
+                    [to] => Array
+                        (
+                            [0] => admin@elliotgaulin.ca
+                        )
+
+                    [subject] => adsdfsdf
+                    [message] => De : gf fc 
+Email : elliotgaulin@hotmail.com
+    
+Message :
+sdfsdfsdfsdfsdf
+                    [headers] => Array
+                        (
+                        )
+
+                    [attachments] => Array
+                        (
+                        )
+
+                    [phpmailer_exception_code] => 0
+                )
+
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+
+[22-Nov-2021 19:26:22 UTC] Message de débogage: Début ajout données
+[22-Nov-2021 19:26:22 UTC] Message de débogage: Presense donnees : 3
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$prenom in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1179
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$nomfamille in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1180
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$ip in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1181
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:33:51 UTC] PHP Notice:  Undefined property: stdClass::$telephone in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1182
+[22-Nov-2021 19:33:51 UTC] PHP Stack trace:
+[22-Nov-2021 19:33:51 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:33:51 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:33:51 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:33:51 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:33:51 UTC] PHP   5. elliot_creer_page_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:33:51 UTC] PHP   6. elliot_afficher_liste_inscriptions() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php:1137
+[22-Nov-2021 19:34:48 UTC] Erreur de la base de données WordPress Unknown column 'prenom' in 'field list' pour la requête 
+		SELECT prenom, nomfamille, ip, telephone 
+			FROM cegepvicto_elliot_items
+			ORDER BY prenom faite par do_action('elliot-gestion_page_elliot_inscription'), WP_Hook->do_action, WP_Hook->apply_filters, elliot_creer_page_inscriptions, elliot_afficher_liste_inscriptions
+[22-Nov-2021 19:34:48 UTC] Message de débogage: Unknown column 'prenom' in 'field list'
+[22-Nov-2021 19:36:17 UTC] Erreur de la base de données WordPress Unknown column 'nomfamille' in 'field list' pour la requête 
+		SELECT nomfamille, prenom, ip, telephone 
+			FROM cegepvicto_elliot_items
+			ORDER BY prenom faite par do_action('elliot-gestion_page_elliot_inscription'), WP_Hook->do_action, WP_Hook->apply_filters, elliot_creer_page_inscriptions, elliot_afficher_liste_inscriptions
+[22-Nov-2021 19:36:17 UTC] Message de débogage: Unknown column 'nomfamille' in 'field list'
+[22-Nov-2021 19:36:36 UTC] Erreur de la base de données WordPress Table 'wordpress2021_gaulinelliot.cegepvicto_elliot_inscriptions' doesn't exist pour la requête 
+		SELECT nomfamille, prenom, ip, telephone 
+			FROM cegepvicto_elliot_inscriptions
+			ORDER BY prenom faite par do_action('elliot-gestion_page_elliot_inscription'), WP_Hook->do_action, WP_Hook->apply_filters, elliot_creer_page_inscriptions, elliot_afficher_liste_inscriptions
+[22-Nov-2021 19:36:36 UTC] Message de débogage: Table 'wordpress2021_gaulinelliot.cegepvicto_elliot_inscriptions' doesn't exist
+[22-Nov-2021 19:41:04 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1201
+[22-Nov-2021 19:43:03 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1201
+[22-Nov-2021 19:46:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'elliot_creer_page_ajout_inscriptions' not found or invalid function name in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php on line 303
+[22-Nov-2021 19:46:22 UTC] PHP Stack trace:
+[22-Nov-2021 19:46:22 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:46:22 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:46:22 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:46:22 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:46:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'elliot_creer_page_ajout_inscriptions' not found or invalid function name in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php on line 303
+[22-Nov-2021 19:46:54 UTC] PHP Stack trace:
+[22-Nov-2021 19:46:54 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 19:46:54 UTC] PHP   2. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:259
+[22-Nov-2021 19:46:54 UTC] PHP   3. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:46:54 UTC] PHP   4. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:47:35 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 194
+[22-Nov-2021 19:47:35 UTC] PHP Stack trace:
+[22-Nov-2021 19:47:35 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:0
+[22-Nov-2021 19:47:35 UTC] PHP   2. require() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\index.php:17
+[22-Nov-2021 19:47:35 UTC] PHP   3. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-blog-header.php:19
+[22-Nov-2021 19:47:35 UTC] PHP   4. include() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template-loader.php:106
+[22-Nov-2021 19:47:35 UTC] PHP   5. get_header() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\hypermarket\404.php:9
+[22-Nov-2021 19:47:35 UTC] PHP   6. locate_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:48
+[22-Nov-2021 19:47:35 UTC] PHP   7. load_template() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:716
+[22-Nov-2021 19:47:35 UTC] PHP   8. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\template.php:770
+[22-Nov-2021 19:47:35 UTC] PHP   9. wp_head() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\header.php:22
+[22-Nov-2021 19:47:35 UTC] PHP  10. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\general-template.php:3015
+[22-Nov-2021 19:47:35 UTC] PHP  11. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:47:35 UTC] PHP  12. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:47:35 UTC] PHP  13. wp_enqueue_scripts() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:47:35 UTC] PHP  14. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\script-loader.php:2083
+[22-Nov-2021 19:47:35 UTC] PHP  15. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 19:47:35 UTC] PHP  16. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 19:47:35 UTC] PHP  17. elliot_charger_css_js_web() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 19:58:45 UTC] Erreur de la base de données WordPress Unknown column 'nom' in 'field list' pour la requête INSERT INTO `cegepvicto_elliot_inscription` (`nom`, `prenom`, `telephone`, `ip`) VALUES ('Gaulin', 'Elliot', '8199601062', '127.0.0.1')
+[22-Nov-2021 19:58:45 UTC] Message de débogage: Unknown column 'nom' in 'field list'
+[22-Nov-2021 19:58:55 UTC] Erreur de la base de données WordPress Unknown column 'nom' in 'field list' pour la requête INSERT INTO `cegepvicto_elliot_inscription` (`nom`, `prenom`, `telephone`, `ip`) VALUES ('TEST', 'TEST', '8199601062', '127.0.0.1')
+[22-Nov-2021 19:58:55 UTC] Message de débogage: Unknown column 'nom' in 'field list'
+[22-Nov-2021 20:01:29 UTC] PHP Notice:  Undefined index: SuccesFormulaireAjoutItem in D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-content\themes\elliot\functions.php on line 1264
+[22-Nov-2021 20:01:29 UTC] PHP Stack trace:
+[22-Nov-2021 20:01:29 UTC] PHP   1. {main}() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:0
+[22-Nov-2021 20:01:29 UTC] PHP   2. require_once() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin.php:239
+[22-Nov-2021 20:01:29 UTC] PHP   3. do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-admin\admin-header.php:287
+[22-Nov-2021 20:01:29 UTC] PHP   4. WP_Hook->do_action() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\plugin.php:470
+[22-Nov-2021 20:01:29 UTC] PHP   5. WP_Hook->apply_filters() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:327
+[22-Nov-2021 20:01:29 UTC] PHP   6. elliot_afficher_resultat_formulaire_ajout_inscription() D:\Program Files\Ampps\www\wordpress2021-gaulinelliot\wp-includes\class-wp-hook.php:303
+[22-Nov-2021 20:02:10 UTC] Erreur de la base de données WordPress Unknown column 'nom' in 'field list' pour la requête INSERT INTO `cegepvicto_elliot_inscription` (`nom`, `prenom`, `telephone`, `ip`) VALUES ('TEST', 'TEST', '8199601062', '127.0.0.1')
+[22-Nov-2021 20:02:10 UTC] Message de débogage: Unknown column 'nom' in 'field list'
+[22-Nov-2021 20:05:23 UTC] Erreur de la base de données WordPress Unknown column 'nom' in 'field list' pour la requête INSERT INTO `cegepvicto_elliot_inscription` (`nom`, `prenom`, `telephone`, `ip`) VALUES ('Gaulin', 'Elliot', '8199601062', '127.0.0.1')

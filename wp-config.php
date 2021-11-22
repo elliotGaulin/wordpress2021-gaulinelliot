@@ -90,7 +90,7 @@ define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG_LOG', true );
 
 // En production (lorsque WP_DEBUG est à false), n'affiche pas les erreurs à l'écran.
-@ini_set( 'display_errors', '0' );
+@ini_set( 'display_errors', '1' );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
@@ -109,7 +109,7 @@ const SMTP_HOST = 'mail.elliotgaulin.ca';
 const SMTP_AUTH = true;
 const SMTP_PORT     = '587';  // ou 465
 const SMTP_SECURE   = 'tls';   // ou ssl
-const SMTP_USERNAME = 'wordpress@elliotgaulin.ca';
-const SMTP_PASSWORD = 'apical1234567';
-const SMTP_FROM = 'wordpress@elliotgaulin.ca';
+const SMTP_USERNAME = 'wordpress2021@elliotgaulin.ca';
+const SMTP_PASSWORD = 'K93hed@ofJ$fiA7!';
+const SMTP_FROM = 'wordpress2021@elliotgaulin.ca';
 const SMTP_FROMNAME = 'Mon site Web';

@@ -562,7 +562,7 @@ function elliot_liste_item_tableau_bord(){
     } else {
 	    echo "<p>
                 <a href='" . get_admin_url() ."admin.php?page=elliot_ajout' class='page-title-action'>Ajouter un item</a>
-            </p>         <hr class='wp-header-end'>";
+            </p><hr class='wp-header-end'>";
 	    echo elliot_afficher_liste_items_menu();
     }
 	echo "
@@ -595,6 +595,24 @@ function elliot_ajouter_menu_tableau_bord(){
 		"manage_options",  // droits requis pour voir l'option de menu
 		"elliot_ajout", // slug
 		"elliot_creer_page_ajout"  // fonction de rappel pour créer la page
+	);
+
+	add_submenu_page(
+		"elliot_gestion",   // slug du menu parent
+		__( "Elliot - Inscription", "elliot" ),  // texte de la balise <title>, initialisera $title
+		__( "Inscription", "elliot" ),   // titre de l'option de sous-menu
+		"manage_options",  // droits requis pour voir l'option de menu
+		"elliot_inscription", // slug
+		"elliot_creer_page_inscriptions"  // fonction de rappel pour créer la page
+	);
+
+	add_submenu_page(
+		"elliot_gestion",   // slug du menu parent
+		__( "Elliot - Ajout inscription", "elliot" ),  // texte de la balise <title>, initialisera $title
+		__( "Ajout inscription", "elliot" ),   // titre de l'option de sous-menu
+		"manage_options",  // droits requis pour voir l'option de menu
+		"elliot_ajout_inscription", // slug
+		"elliot_creer_page_ajout_inscription"  // fonction de rappel pour créer la page
 	);
 }
 
@@ -1088,3 +1106,179 @@ function elliot_afficher_resultat_formulaire_modification_item(){
 	return $code_html;
 }
 add_action( 'admin_notices', 'elliot_afficher_resultat_formulaire_modification_item' );
+
+/**
+ * Ajout des tables personalisée pour les inscriptions dans le thème enfant Elliot
+ *
+ * Utilisation add_action( "after_switch_theme", "elliot_creer_table_inscription")
+ * @author Elliot Gaulin
+ */
+function elliot_creer_table_inscription() {
+	global $wpdb;
+
+	$charset_collate = $wpdb->get_charset_collate();
+
+	$nom_table = $wpdb->prefix . 'elliot_inscription';
+
+	$requete_sql = "CREATE TABLE $nom_table (
+		`id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+		nomfamille varchar(255),
+		prenom varchar(255),
+		telephone varchar(10),
+		ip varchar(15),
+		PRIMARY KEY (`id`)
+		)$charset_collate;";
+
+
+	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	dbDelta( $requete_sql );
+}
+
+add_action( "after_switch_theme", "elliot_creer_table_inscription" );
+
+function elliot_creer_page_inscriptions(){
+	global $title;   // titre de la page du menu, tel qu'initialisé dans la fonction de rappel de add_menu_page
+	?>
+    <div class="wrap">
+        <h1 class="wp-header-head"><?php echo $title; ?></h1>
+        <hr class="wp-header-end">
+		<?php
+		echo elliot_afficher_liste_inscriptions();
+		?>
+    </div>
+	<?php
+}
+
+function elliot_afficher_liste_inscriptions() {
+	global $wpdb;
+	$code_html = "";
+	$message_aucune_donnee = __( 'Aucune donnée ne correspond aux critères demandés.', 'fr_CA' );
+	$message_erreur_sql = __( 'Oups ! Un problème a été rencontré.', 'fr_CA' );
+
+	$table = $wpdb->prefix . "elliot_inscription";
+
+	$requete = "
+		SELECT nomfamille, prenom, ip, telephone 
+			FROM $table
+			ORDER BY prenom";
+	$resultat = $wpdb->get_results( $requete );
+	$erreur_sql = $wpdb->last_error;
+
+	if ( $erreur_sql == "" ) {
+		if ( $wpdb->num_rows > 0 ) {
+			$code_html = "";
+			$code_html .= "
+                <table class='table'>
+                    <thead>
+                        <tr>
+                            <th>" . __('Prénom', 'elliot') . "</th>
+                            <th>" . __('Nom de famille', 'elliot') . "</th>
+                            <th>" . __('Adresse ip', 'elliot') . "</th>
+                            <th>" . __('Téléphone', 'elliot') . "</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            ";
+
+			foreach ( $resultat as $enreg ) {
+				//$url_suppression = get_stylesheet_directory_uri() . "/suppression-item.php?id=$enreg->id";
+				//$url_suppression_protege = wp_nonce_url( $url_suppression, "supprimer_item_$enreg->id" );
+				$code_html .= "
+					<tr>
+					    <th>$enreg->prenom</th>
+                        <th>$enreg->nomfamille</th>
+                        <th>$enreg->ip</th>
+                        <th>$enreg->telephone</th>
+                    </tr>
+				";
+			}
+			$code_html .= '</tbody></table>';
+		} else {
+			$code_html .= '<div class="messageavertissement">';
+			$code_html .= $message_aucune_donnee;
+			$code_html .= '</div>';
+		}
+	} else {
+		$code_html .= '<div class="messageerreur">';
+		$code_html .= $message_erreur_sql;
+		$code_html .= '</div>';
+		// écrit l'erreur dans le journal seulement si on est en mode débogage
+		elliot_log_debug( $erreur_sql );
+	}
+	return $code_html;
+}
+
+function elliot_creer_page_ajout_inscription(){
+	global $title;   // titre de la page du menu, tel qu'initialisé dans la fonction de rappel de add_menu_page
+	?>
+    <div class="wrap">
+    <h1 class="wp-header-head"><?php echo $title; ?></h1>
+    <hr class="wp-header-end">
+    <?php
+	$nonce = wp_nonce_field( 'ajouter_inscription', 'nonce_ajouter_inscription', true, false);
+
+	$code_html = "
+        <form method='post' action='". get_stylesheet_directory_uri(). "/enregistrer-inscription.php'>
+            $nonce
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='prenom'>" . __('* Prenom', 'elliot'). "</label>
+                        <input type='text' class='form-control' id='prenom' name='prenom' maxlength='255' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for='nom'>" . __('* Nom', 'elliot') . "</label>
+                        <input type='text' class='form-control' id='nom' name='nom' maxlength='255' required>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <div class='row mb-3'>
+                <div class='col-md-12'>
+                    <label for='description'>" . __('* Téléphone', 'elliot') . "</label>
+                        <input type='tel' class='form-control' id='telephone' name='telephone' pattern='[0-9]{10}' required>
+                </div>
+            </div>
+            <button type='submit' class='page-title-action'>" . __('Envoyer', 'elliot') . "</button>
+        </form>
+	";
+
+	echo $code_html;
+    ?>
+    </div>
+    <?php
+}
+
+/**
+ *
+ * Affiche le résultat du traitement du formulaire de contact.
+ *
+ * @author Elliot Gaulin
+ */
+function elliot_afficher_resultat_formulaire_ajout_inscription(){
+	$code_html = "";
+	if ( isset( $_SESSION['SuccesFormulaireAjoutInscription'] ) ){
+		//Si le formulaire à fonctionner : vert
+		if ( $_SESSION['SuccesFormulaireAjoutInscription'] ){
+			echo "<div class='notice notice-success is-dismissible' role='alert'>";
+			//Sinon danger pour rouge
+		} else {
+			echo "<div class='notice notice-warning is-dismissible' role='alert'>";
+		}
+
+		if ( isset( $_SESSION['MessageFormulaireAjoutInscription'] ) ) {
+			echo $_SESSION['MessageFormulaireAjoutInscription'];
+			unset($_SESSION['MessageFormulaireAjoutInscription']);
+		} else {
+			echo "Veuillez vous fier à la couleur de cette alerte pour savoir si le contact à fonctionner";
+		}
+		echo "</div>";
+
+		unset($_SESSION['SuccesFormulaireAjoutInscription']);
+	}
+	return $code_html;
+}
+add_action( 'admin_notices', 'elliot_afficher_resultat_formulaire_ajout_inscription' );
